@@ -16,6 +16,7 @@
 		18BFC1272595A2A700E67817 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC1262595A2A700E67817 /* ViewController.m */; };
 		18BFC12B2595A82700E67817 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC1292595A82700E67817 /* FileViewController.m */; };
 		18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC12A2595A82700E67817 /* FileViewController.xib */; };
+		18BFC13025962CD600E67817 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC12F25962CD600E67817 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		18BFC1282595A82700E67817 /* FileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
 		18BFC1292595A82700E67817 /* FileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
 		18BFC12A2595A82700E67817 /* FileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileViewController.xib; sourceTree = "<group>"; };
+		18BFC12E25962CD600E67817 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		18BFC12F25962CD600E67817 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				18BFC12D25962CB400E67817 /* ocbase */,
 				18BFC1242595A28300E67817 /* controller */,
 				18BFC10325959E0700E67817 /* AppDelegate.h */,
 				18BFC10425959E0700E67817 /* AppDelegate.m */,
@@ -90,6 +94,15 @@
 				18BFC12A2595A82700E67817 /* FileViewController.xib */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		18BFC12D25962CB400E67817 /* ocbase */ = {
+			isa = PBXGroup;
+			children = (
+				18BFC12E25962CD600E67817 /* Student.h */,
+				18BFC12F25962CD600E67817 /* Student.m */,
+			);
+			path = ocbase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +181,7 @@
 				18BFC12B2595A82700E67817 /* FileViewController.m in Sources */,
 				18BFC1272595A2A700E67817 /* ViewController.m in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
+				18BFC13025962CD600E67817 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
