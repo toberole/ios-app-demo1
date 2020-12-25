@@ -17,6 +17,9 @@
 		18BFC12B2595A82700E67817 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC1292595A82700E67817 /* FileViewController.m */; };
 		18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC12A2595A82700E67817 /* FileViewController.xib */; };
 		18BFC13025962CD600E67817 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC12F25962CD600E67817 /* Student.m */; };
+		18BFC1392596392A00E67817 /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC1382596392A00E67817 /* NetViewController.m */; };
+		18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC13B25963B8700E67817 /* NavigationControllerDemo.m */; };
+		18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC13C25963B8700E67817 /* NavigationControllerDemo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,11 @@
 		18BFC12A2595A82700E67817 /* FileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileViewController.xib; sourceTree = "<group>"; };
 		18BFC12E25962CD600E67817 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18BFC12F25962CD600E67817 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		18BFC1372596392A00E67817 /* NetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetViewController.h; sourceTree = "<group>"; };
+		18BFC1382596392A00E67817 /* NetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetViewController.m; sourceTree = "<group>"; };
+		18BFC13A25963B8700E67817 /* NavigationControllerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDemo.h; sourceTree = "<group>"; };
+		18BFC13B25963B8700E67817 /* NavigationControllerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDemo.m; sourceTree = "<group>"; };
+		18BFC13C25963B8700E67817 /* NavigationControllerDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationControllerDemo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,11 @@
 				18BFC1282595A82700E67817 /* FileViewController.h */,
 				18BFC1292595A82700E67817 /* FileViewController.m */,
 				18BFC12A2595A82700E67817 /* FileViewController.xib */,
+				18BFC1372596392A00E67817 /* NetViewController.h */,
+				18BFC1382596392A00E67817 /* NetViewController.m */,
+				18BFC13A25963B8700E67817 /* NavigationControllerDemo.h */,
+				18BFC13B25963B8700E67817 /* NavigationControllerDemo.m */,
+				18BFC13C25963B8700E67817 /* NavigationControllerDemo.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -164,6 +177,7 @@
 			files = (
 				18BFC11325959E0800E67817 /* LaunchScreen.storyboard in Resources */,
 				18BFC11025959E0800E67817 /* Assets.xcassets in Resources */,
+				18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
 			);
@@ -176,11 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
 				18BFC10525959E0700E67817 /* AppDelegate.m in Sources */,
 				18BFC11625959E0800E67817 /* main.m in Sources */,
 				18BFC12B2595A82700E67817 /* FileViewController.m in Sources */,
 				18BFC1272595A2A700E67817 /* ViewController.m in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
+				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
