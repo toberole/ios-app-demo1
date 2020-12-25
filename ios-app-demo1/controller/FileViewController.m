@@ -17,7 +17,7 @@
     [self.btn_test1 addTarget:self action:@selector(btn_test1_clicked) forControlEvents:UIControlEventTouchUpInside];
     
     self.btn_test2 = [self.view viewWithTag:2];
-       [self.btn_test2 addTarget:self action:@selector(btn_test2_clicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.btn_test2 addTarget:self action:@selector(btn_test2_clicked) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -34,54 +34,36 @@
  4. tmp: 提供一个即时创建临时文件的地方。
  */
 -(void)btn_test1_clicked{
-   //获取沙盒的路径(用户根目录)
-   NSString *homeDir = NSHomeDirectory();
-   NSLog(@"homeDir: %@",homeDir);
-   //获取临时文件路径（tmp）
-   NSString *tempDir = NSTemporaryDirectory();
-   NSLog(@"tempDir: %@", tempDir);
-   //获取Documents路径方式一
-   NSString *documentsDir = [homeDir stringByAppendingString:@"/Documents"];
-   NSLog(@"documentsDir: %@", documentsDir);
-   //获取Documents路径的方式二
-   NSString *documentsDir2 = [homeDir stringByAppendingPathComponent:@"Documents"];
-   NSLog(@"documentsDir2: %@",documentsDir2);
-   //获取Documents路径的方式三(IOS环境一下一般只有一个元素)
-   NSArray *array = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-   NSLog(@"%@", array[0]);
+    //获取沙盒的路径(用户根目录)
+    NSString *homeDir = NSHomeDirectory();
+    NSLog(@"homeDir: %@",homeDir);
+    //获取临时文件路径（tmp）
+    NSString *tempDir = NSTemporaryDirectory();
+    NSLog(@"tempDir: %@", tempDir);
+    //获取Documents路径方式一
+    NSString *documentsDir = [homeDir stringByAppendingString:@"/Documents"];
+    NSLog(@"documentsDir: %@", documentsDir);
+    //获取Documents路径的方式二
+    NSString *documentsDir2 = [homeDir stringByAppendingPathComponent:@"Documents"];
+    NSLog(@"documentsDir2: %@",documentsDir2);
+    //获取Documents路径的方式三(IOS环境一下一般只有一个元素)
+    NSArray *array = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSLog(@"%@", array[0]);
 }
 
 -(void)btn_test2_clicked{
-    //获取文件管理器(单例对象)
     NSFileManager *fileManager = [NSFileManager defaultManager];
+    // 访问【沙盒的document】目录下的问题件，该目录下支持手动增加、修改、删除文件及目录
+    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/test.txt"];
     
-    //创建一个目录
-    NSString *filePath = @"/Users/xxxxxxx/Desktop/test";
-    NSError *error;
-    //判断目录是否存在
-    if (![fileManager fileExistsAtPath:filePath]) {
-        //参数二. 补齐缺失路径(创建多级目录)
-        [fileManager createDirectoryAtPath:filePath withIntermediateDirectories:YES attributes:nil error:&error];
-    }
-    if (error) {
-        NSLog(@"error = %@", error);
-    }
+    NSLog(@"filePath: %@",filePath);
     
-    //文件遍历－浅遍历 --只遍历当前目录下的文件，不遍历二级目录里面的文件
-    NSString *filePath1 = @"/Users/xxxxxxx/Desktop/Car";
-    NSArray *array = [fileManager contentsOfDirectoryAtPath:filePath1 error:&error];
-    if (error) {
-        NSLog(@"error = %@", error);
+    // 如果不存在
+    if(![fileManager fileExistsAtPath:filePath])  {
+        NSLog(@"文件不存在......");
+    }else{
+        NSLog(@"文件存在......");
     }
-    NSLog(@"%@", array);
-    
-    //文件遍历 －深遍历 －－全部遍历
-    NSArray *array1 = [fileManager subpathsOfDirectoryAtPath:filePath1 error:&error];
-    if (error) {
-        NSLog(@"error = %@", error);
-    }
-    NSLog(@"%@", array1);
 }
-
 
 @end
