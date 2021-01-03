@@ -6,6 +6,11 @@
 
 @property (nonatomic,strong)UIButton*btn_test2;
 
+@property (nonatomic,strong)UIButton*btn_test3;
+
+@property (nonatomic,strong)UIButton*btn_test4;
+
+
 @end
 
 @implementation FileViewController
@@ -18,6 +23,87 @@
     
     self.btn_test2 = [self.view viewWithTag:2];
     [self.btn_test2 addTarget:self action:@selector(btn_test2_clicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.btn_test3 = [self.view viewWithTag:3];
+    [self.btn_test3 addTarget:self action:@selector(btn_test3_clicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.btn_test4 = [self.view viewWithTag:4];
+       [self.btn_test4 addTarget:self action:@selector(btn_test4_clicked) forControlEvents:UIControlEventTouchUpInside];
+}
+
+
+-(void)btn_test4_clicked{
+    //  分段读取
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"2" ofType:@"txt" inDirectory:@"files"];
+    NSFileHandle *fileHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+    NSInteger count = 0;
+    NSInteger dataLength = 256;
+    NSData *data =nil;
+    
+    while (YES) {
+        [fileHandle seekToFileOffset:count*dataLength];
+        data = [fileHandle readDataOfLength:dataLength];
+        
+        if (!data||[data length]<=0) {
+            break;
+        }
+        
+        NSString *str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+//
+       
+        
+        
+        NSLog(@"len: %lu,str: %@",(unsigned long)[data length],str);
+        count++;
+    }
+    
+    [fileHandle closeFile];
+}
+
+/**
+ 添加文件到app 需要在配置中的build phases中添加到项目中
+ 
+ */
+-(void)btn_test3_clicked{
+    // 获取文件夹下的文件路径
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"txt" inDirectory:@"files"];
+    NSLog(@"filePath: %@",filePath);
+    
+    NSFileHandle *readHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+    
+    NSData* d = nil;
+    while (YES) {
+        d = [readHandle readDataOfLength:256];
+        if (d == nil) {
+            break;
+        }
+        NSString * str  =[[NSString alloc] initWithData:d encoding:NSUTF8StringEncoding];
+        NSLog(@"content: %@",str);
+    }
+    
+    d = [readHandle readDataOfLength:256];
+    NSString * str  =[[NSString alloc] initWithData:d encoding:NSUTF8StringEncoding];
+    NSLog(@"content: %@",str);
+    
+    
+    
+    
+    // 读取文件内容
+    //    NSData*data = [NSData dataWithContentsOfFile:filePath];
+    //    * str  =[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    //    NSLog(@"content: %@",str);
+    
+    BOOL b = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
+    NSLog(@"fileExistsAtPath: %i",b);
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"test1" ofType:@"storyboardc"];
+    NSLog(@"filePath: %@",filePath);
+    b = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
+    NSLog(@"fileExistsAtPath: %i",b);
+    
+    
+    
+    
 }
 
 /**
@@ -53,7 +139,7 @@
 
 -(void)btn_test2_clicked{
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    // 访问【沙盒的document】目录下的问题件，该目录下支持手动增加、修改、删除文件及目录
+    // 访问沙盒的document目录下的问题件，该目录下支持手动增加、修改、删除文件及目录
     NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/test.txt"];
     
     NSLog(@"filePath: %@",filePath);

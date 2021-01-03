@@ -1,8 +1,9 @@
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NavigationControllerDemo : UIViewController
+@interface NavigationControllerDemo : BaseViewController
 
 @end
 
