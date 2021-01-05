@@ -75,7 +75,7 @@
     }
     
     // 加载动态库
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ios_lib" ofType:@"so" inDirectory:@"files"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ios_lib" ofType:@"" inDirectory:@"files"];
     b = [[NSFileManager defaultManager]fileExistsAtPath:filePath];
     if (b) {
         NSLog(@"ios_lib.so fileExist ......");
@@ -83,8 +83,13 @@
     hModule = dlopen([filePath UTF8String], RTLD_LAZY);
     if (hModule) {
         NSLog(@"加载动态库 dlopen ios_lib succ ......");
+        int(*func)(void);
+        func = (int(*)(void))dlsym(hModule, "demo3_test1");
+        int n = func();
+        NSLog(@"加载动态库 dlopen demo3_test1 %d ......",n);
     }else{
-        NSLog(@"加载动态库 dlopen ios_lib fail ......");
+        char*err = dlerror();
+        NSLog(@"加载动态库 dlopen ios_lib fail errorMsg: %s......",err);
     }
 }
 
