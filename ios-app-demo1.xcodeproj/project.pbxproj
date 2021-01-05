@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18089288259C7D3E003F3CA7 /* libios_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18089287259C7D3E003F3CA7 /* libios_lib.a */; };
 		180892CF25A48D10003F3CA7 /* aaa in Resources */ = {isa = PBXBuildFile; fileRef = 180892CE25A48D10003F3CA7 /* aaa */; };
+		180892D125A48E53003F3CA7 /* test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180892D025A48E53003F3CA7 /* test.bundle */; };
 		18A68880259766DD00FF3426 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6887F259766DD00FF3426 /* FileUtil.m */; };
 		18A68883259842FB00FF3426 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68882259842FB00FF3426 /* BaseViewController.m */; };
 		18A68886259843B300FF3426 /* POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68885259843B300FF3426 /* POPAnimation.m */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		18089287259C7D3E003F3CA7 /* libios_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libios_lib.a; path = ../../../../../Desktop/libios_lib.a; sourceTree = "<group>"; };
 		180892CE25A48D10003F3CA7 /* aaa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aaa; sourceTree = "<group>"; };
+		180892D025A48E53003F3CA7 /* test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = test.bundle; sourceTree = "<group>"; };
 		18A6887E259766DD00FF3426 /* FileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		18A6887F259766DD00FF3426 /* FileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		18A68881259842FB00FF3426 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				180892D025A48E53003F3CA7 /* test.bundle */,
 				180892CE25A48D10003F3CA7 /* aaa */,
 				18A688A6259897D000FF3426 /* libs */,
 				18A688A12598931F00FF3426 /* wrapper */,
@@ -283,6 +286,7 @@
 				180892CF25A48D10003F3CA7 /* aaa in Resources */,
 				18BFC1602597077C00E67817 /* files in Resources */,
 				18A6889D2598863500FF3426 /* test2.storyboard in Resources */,
+				180892D125A48E53003F3CA7 /* test.bundle in Resources */,
 				18BFC1582596DE1000E67817 /* test1.storyboard in Resources */,
 				18BFC11325959E0800E67817 /* LaunchScreen.storyboard in Resources */,
 				18BFC11025959E0800E67817 /* Assets.xcassets in Resources */,
