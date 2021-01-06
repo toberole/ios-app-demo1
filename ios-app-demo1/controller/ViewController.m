@@ -32,7 +32,12 @@
     self.btn_NavigationControllerDemo = [self.view viewWithTag:3];
     [self.btn_NavigationControllerDemo addTarget:self action:@selector(btn_NavigationControllerDemo_clicked) forControlEvents:UIControlEventTouchUpInside];
     
-    [self test];
+    // [self test];
+    [self test1];
+    
+}
+
+-(void)test1{
     
 }
 

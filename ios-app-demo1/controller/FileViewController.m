@@ -85,9 +85,6 @@
     NSString * str  =[[NSString alloc] initWithData:d encoding:NSUTF8StringEncoding];
     NSLog(@"content: %@",str);
     
-    
-    
-    
     // 读取文件内容
     //    NSData*data = [NSData dataWithContentsOfFile:filePath];
     //    * str  =[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];

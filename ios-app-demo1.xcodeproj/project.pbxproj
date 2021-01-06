@@ -10,6 +10,9 @@
 		18089288259C7D3E003F3CA7 /* libios_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18089287259C7D3E003F3CA7 /* libios_lib.a */; };
 		180892CF25A48D10003F3CA7 /* aaa in Resources */ = {isa = PBXBuildFile; fileRef = 180892CE25A48D10003F3CA7 /* aaa */; };
 		180892D125A48E53003F3CA7 /* test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180892D025A48E53003F3CA7 /* test.bundle */; };
+		180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D225A56C71003F3CA7 /* Storyboard1.storyboard */; };
+		180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */; };
+		180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D625A572A5003F3CA7 /* Storyboard3.storyboard */; };
 		18A68880259766DD00FF3426 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6887F259766DD00FF3426 /* FileUtil.m */; };
 		18A68883259842FB00FF3426 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68882259842FB00FF3426 /* BaseViewController.m */; };
 		18A68886259843B300FF3426 /* POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68885259843B300FF3426 /* POPAnimation.m */; };
@@ -30,7 +33,6 @@
 		18BFC1392596392A00E67817 /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC1382596392A00E67817 /* NetViewController.m */; };
 		18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC13B25963B8700E67817 /* NavigationControllerDemo.m */; };
 		18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC13C25963B8700E67817 /* NavigationControllerDemo.xib */; };
-		18BFC142259641EC00E67817 /* AudioQueuePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC141259641EC00E67817 /* AudioQueuePlay.m */; };
 		18BFC1582596DE1000E67817 /* test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC1572596DE1000E67817 /* test1.storyboard */; };
 		18BFC1602597077C00E67817 /* files in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC15F2597077C00E67817 /* files */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,11 @@
 		18089287259C7D3E003F3CA7 /* libios_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libios_lib.a; path = ../../../../../Desktop/libios_lib.a; sourceTree = "<group>"; };
 		180892CE25A48D10003F3CA7 /* aaa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aaa; sourceTree = "<group>"; };
 		180892D025A48E53003F3CA7 /* test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = test.bundle; sourceTree = "<group>"; };
+		180892D225A56C71003F3CA7 /* Storyboard1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
+		180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
+		180892D625A572A5003F3CA7 /* Storyboard3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard3.storyboard; sourceTree = "<group>"; };
+		180892D925A57332003F3CA7 /* AudioQueuePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlay.h; sourceTree = "<group>"; };
+		180892DA25A57332003F3CA7 /* AudioQueuePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlay.m; sourceTree = "<group>"; };
 		18A6887E259766DD00FF3426 /* FileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		18A6887F259766DD00FF3426 /* FileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		18A68881259842FB00FF3426 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -53,7 +60,6 @@
 		18A688A22598934A00FF3426 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		18A688A3259893A000FF3426 /* TestWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWrapper.h; sourceTree = "<group>"; };
 		18A688A4259893A000FF3426 /* TestWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestWrapper.mm; sourceTree = "<group>"; };
-		18A688BB2598A00200FF3426 /* libios_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libios_lib.a; path = ../../../Desktop/libios_lib.a; sourceTree = "<group>"; };
 		18BFC10025959E0700E67817 /* ios-app-demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-app-demo1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BFC10325959E0700E67817 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18BFC10425959E0700E67817 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,8 +82,6 @@
 		18BFC13A25963B8700E67817 /* NavigationControllerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDemo.h; sourceTree = "<group>"; };
 		18BFC13B25963B8700E67817 /* NavigationControllerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDemo.m; sourceTree = "<group>"; };
 		18BFC13C25963B8700E67817 /* NavigationControllerDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationControllerDemo.xib; sourceTree = "<group>"; };
-		18BFC140259641EC00E67817 /* AudioQueuePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlay.h; sourceTree = "<group>"; };
-		18BFC141259641EC00E67817 /* AudioQueuePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlay.m; sourceTree = "<group>"; };
 		18BFC1552596DD9E00E67817 /* README.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = README.h; sourceTree = "<group>"; };
 		18BFC1572596DE1000E67817 /* test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test1.storyboard; sourceTree = "<group>"; };
 		18BFC15F2597077C00E67817 /* files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = files; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180892D825A57332003F3CA7 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				180892D925A57332003F3CA7 /* AudioQueuePlay.h */,
+				180892DA25A57332003F3CA7 /* AudioQueuePlay.m */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		18A6887D259766BA00FF3426 /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +124,6 @@
 		18A6889E259892EF00FF3426 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18A688BB2598A00200FF3426 /* libios_lib.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,26 +166,29 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
-				180892D025A48E53003F3CA7 /* test.bundle */,
 				180892CE25A48D10003F3CA7 /* aaa */,
-				18A688A6259897D000FF3426 /* libs */,
-				18A688A12598931F00FF3426 /* wrapper */,
-				18A6887D259766BA00FF3426 /* util */,
 				18BFC15F2597077C00E67817 /* files */,
-				18BFC1562596DDF400E67817 /* layout */,
-				18BFC13F2596416E00E67817 /* audio */,
-				18BFC12D25962CB400E67817 /* ocbase */,
-				18BFC1242595A28300E67817 /* controller */,
+				180892D025A48E53003F3CA7 /* test.bundle */,
 				18BFC10325959E0700E67817 /* AppDelegate.h */,
-				18BFC10425959E0700E67817 /* AppDelegate.m */,
-				18BFC10625959E0700E67817 /* SceneDelegate.h */,
-				18BFC10725959E0700E67817 /* SceneDelegate.m */,
-				18BFC10C25959E0700E67817 /* Main.storyboard */,
-				18BFC10F25959E0800E67817 /* Assets.xcassets */,
-				18BFC11125959E0800E67817 /* LaunchScreen.storyboard */,
-				18BFC11425959E0800E67817 /* Info.plist */,
-				18BFC11525959E0800E67817 /* main.m */,
 				18BFC1552596DD9E00E67817 /* README.h */,
+				18BFC10625959E0700E67817 /* SceneDelegate.h */,
+				18BFC10425959E0700E67817 /* AppDelegate.m */,
+				18BFC11525959E0800E67817 /* main.m */,
+				18BFC10725959E0700E67817 /* SceneDelegate.m */,
+				18BFC11425959E0800E67817 /* Info.plist */,
+				180892D225A56C71003F3CA7 /* Storyboard1.storyboard */,
+				180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */,
+				180892D625A572A5003F3CA7 /* Storyboard3.storyboard */,
+				18BFC10F25959E0800E67817 /* Assets.xcassets */,
+				180892D825A57332003F3CA7 /* audio */,
+				18BFC1242595A28300E67817 /* controller */,
+				18BFC11125959E0800E67817 /* LaunchScreen.storyboard */,
+				18BFC1562596DDF400E67817 /* layout */,
+				18A688A6259897D000FF3426 /* libs */,
+				18BFC10C25959E0700E67817 /* Main.storyboard */,
+				18BFC12D25962CB400E67817 /* ocbase */,
+				18A6887D259766BA00FF3426 /* util */,
+				18A688A12598931F00FF3426 /* wrapper */,
 			);
 			path = "ios-app-demo1";
 			sourceTree = "<group>";
@@ -206,15 +221,6 @@
 				18BFC12F25962CD600E67817 /* Student.m */,
 			);
 			path = ocbase;
-			sourceTree = "<group>";
-		};
-		18BFC13F2596416E00E67817 /* audio */ = {
-			isa = PBXGroup;
-			children = (
-				18BFC140259641EC00E67817 /* AudioQueuePlay.h */,
-				18BFC141259641EC00E67817 /* AudioQueuePlay.m */,
-			);
-			path = audio;
 			sourceTree = "<group>";
 		};
 		18BFC1562596DDF400E67817 /* layout */ = {
@@ -287,9 +293,12 @@
 				18BFC1602597077C00E67817 /* files in Resources */,
 				18A6889D2598863500FF3426 /* test2.storyboard in Resources */,
 				180892D125A48E53003F3CA7 /* test.bundle in Resources */,
+				180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */,
 				18BFC1582596DE1000E67817 /* test1.storyboard in Resources */,
 				18BFC11325959E0800E67817 /* LaunchScreen.storyboard in Resources */,
 				18BFC11025959E0800E67817 /* Assets.xcassets in Resources */,
+				180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */,
+				180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */,
 				18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
@@ -316,7 +325,6 @@
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
 				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
-				18BFC142259641EC00E67817 /* AudioQueuePlay.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

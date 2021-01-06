@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eDM-0Y-6HC">
+            <objects>
+                <viewController id="alS-bl-QDz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dhc-bS-u6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0be-jp-oQG">
+                                <rect key="frame" x="50" y="94" width="314" height="718"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tbt-g1-7TW" firstAttribute="trailing" secondItem="0be-jp-oQG" secondAttribute="trailing" constant="50" id="47O-fr-Ovx"/>
+                            <constraint firstItem="tbt-g1-7TW" firstAttribute="bottom" secondItem="0be-jp-oQG" secondAttribute="bottom" constant="50" id="FOS-Yf-Qu3"/>
+                            <constraint firstItem="0be-jp-oQG" firstAttribute="top" secondItem="tbt-g1-7TW" secondAttribute="top" constant="50" id="KIo-ai-4xt"/>
+                            <constraint firstItem="0be-jp-oQG" firstAttribute="leading" secondItem="tbt-g1-7TW" secondAttribute="leading" constant="50" id="ScZ-I1-4DZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tbt-g1-7TW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7S-oz-pqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="58"/>
+        </scene>
+    </scenes>
+</document>
