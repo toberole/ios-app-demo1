@@ -17,32 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOS-DK-f8Z">
-                                <rect key="frame" x="20" y="792" width="41" height="50"/>
+                                <rect key="frame" x="20" y="792" width="177" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Jd1-YQ-cMn"/>
-                                    <constraint firstAttribute="height" constant="50" id="esV-b9-BfL"/>
+                                    <constraint firstAttribute="height" constant="50" id="TMT-YS-WTj"/>
                                 </constraints>
                                 <state key="normal" title="aaaaa">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euc-zl-ks6">
-                                <rect key="frame" x="349" y="792" width="45" height="50"/>
+                                <rect key="frame" x="217" y="792" width="177" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="zke-aw-VyY"/>
-                                </constraints>
                                 <state key="normal" title="bbbbb"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="K32-sY-pak" firstAttribute="trailing" secondItem="Euc-zl-ks6" secondAttribute="trailing" constant="20" id="1hM-lo-Id4"/>
-                            <constraint firstItem="Euc-zl-ks6" firstAttribute="height" secondItem="JOS-DK-f8Z" secondAttribute="height" id="ALB-cK-qQF"/>
-                            <constraint firstItem="K32-sY-pak" firstAttribute="bottom" secondItem="Euc-zl-ks6" secondAttribute="bottom" constant="20" id="BtR-18-Gw6"/>
-                            <constraint firstItem="JOS-DK-f8Z" firstAttribute="leading" secondItem="K32-sY-pak" secondAttribute="leading" constant="20" id="bwX-gf-5DY"/>
-                            <constraint firstItem="K32-sY-pak" firstAttribute="bottom" secondItem="JOS-DK-f8Z" secondAttribute="bottom" constant="20" id="ryQ-Pd-tOm"/>
+                            <constraint firstItem="Euc-zl-ks6" firstAttribute="leading" secondItem="JOS-DK-f8Z" secondAttribute="trailing" constant="20" id="0qF-HR-RGZ"/>
+                            <constraint firstItem="K32-sY-pak" firstAttribute="bottom" secondItem="Euc-zl-ks6" secondAttribute="bottom" constant="20" id="AGx-LM-dHB"/>
+                            <constraint firstItem="JOS-DK-f8Z" firstAttribute="leading" secondItem="K32-sY-pak" secondAttribute="leading" constant="20" id="JKi-3B-N3j"/>
+                            <constraint firstItem="K32-sY-pak" firstAttribute="bottom" secondItem="JOS-DK-f8Z" secondAttribute="bottom" constant="20" id="Saz-rp-Qft"/>
+                            <constraint firstItem="Euc-zl-ks6" firstAttribute="height" secondItem="JOS-DK-f8Z" secondAttribute="height" id="Xg3-OV-cCD"/>
+                            <constraint firstItem="K32-sY-pak" firstAttribute="trailing" secondItem="Euc-zl-ks6" secondAttribute="trailing" constant="20" id="fcH-J9-cdo"/>
+                            <constraint firstItem="Euc-zl-ks6" firstAttribute="leading" secondItem="JOS-DK-f8Z" secondAttribute="trailing" constant="20" id="mUY-2X-QRW"/>
+                            <constraint firstItem="Euc-zl-ks6" firstAttribute="width" secondItem="JOS-DK-f8Z" secondAttribute="width" id="uuu-c7-QL3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K32-sY-pak"/>
                     </view>

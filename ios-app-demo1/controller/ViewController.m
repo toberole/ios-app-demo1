@@ -13,9 +13,6 @@
 
 @property (nonatomic,strong)UIButton*btn_NavigationControllerDemo;
 
-
-
-
 @end
 
 @implementation ViewController
@@ -38,7 +35,30 @@
 }
 
 -(void)test1{
+    NSBundle*mainBundle = [NSBundle mainBundle];
+    NSString*resourcePath = [mainBundle resourcePath];
+    NSLog(@"resourcePath: %@",resourcePath);
+    NSString*bundlePath = [mainBundle bundlePath];
+    NSLog(@"bundlePath: %@",bundlePath);
     
+    // 放在主工程中的自定义bundle
+    NSString*test_bundle_path = [mainBundle pathForResource:@"test" ofType:@"bundle"];
+    NSLog(@"test_bundle_path: %@",test_bundle_path);
+    NSBundle*test_bundle=[NSBundle bundleWithPath:test_bundle_path];
+    // 获取自定义bundle中的文件
+    NSString*test_a_path = [test_bundle pathForResource:@"test_a" ofType:@"txt"];
+    NSLog(@"test_a_path: %@",test_a_path);
+    
+    BOOL b = [[NSFileManager defaultManager]fileExistsAtPath:test_a_path];
+    if (b) {
+        NSLog(@"test_a 存在");
+    }
+    
+    NSString*txt_1_path = [mainBundle pathForResource:@"/files/1" ofType:@"txt"];
+    b = [[NSFileManager defaultManager]fileExistsAtPath:txt_1_path];
+    if (b) {
+        NSLog(@"1.txt fileExists %i",b);
+    }
 }
 
 -(void)test{
@@ -52,7 +72,6 @@
     NSString *resourcePath =  [bundle resourcePath];
     NSString *bundlePath = [bundle bundlePath];
     NSLog(@"resourcePath: %@\nbundlePath: %@",resourcePath,bundlePath);
-    
     
     NSString* dlPath = [NSString stringWithFormat: @"%@/libios_lib.a", resourcePath];
     
