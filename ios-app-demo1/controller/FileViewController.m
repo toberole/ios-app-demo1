@@ -147,6 +147,9 @@
     }else{
         NSLog(@"文件存在......");
     }
+    
+//    NSData*data = nil;
+//    data writeToFile:<#(nonnull NSString *)#> atomically:<#(BOOL)#>
 }
 
 @end

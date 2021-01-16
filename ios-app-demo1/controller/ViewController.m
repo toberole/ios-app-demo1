@@ -4,6 +4,10 @@
 #import "NavigationControllerDemo.h"
 #import "TestWrapper.h"
 #include <dlfcn.h>
+#include "cpp_demo1.hpp"
+#import "AudioQueuePlay.h"
+#import "FileUtil.h"
+#import "DateUtil.h"
 
 @interface ViewController ()
 
@@ -12,6 +16,10 @@
 @property (nonatomic,strong)UIButton*btn_net;
 
 @property (nonatomic,strong)UIButton*btn_NavigationControllerDemo;
+
+@property (nonatomic,strong)UIButton*btn_pcm;
+
+@property (nonatomic,strong)AudioQueuePlay*audioQueuePlay;
 
 @end
 
@@ -29,9 +37,142 @@
     self.btn_NavigationControllerDemo = [self.view viewWithTag:3];
     [self.btn_NavigationControllerDemo addTarget:self action:@selector(btn_NavigationControllerDemo_clicked) forControlEvents:UIControlEventTouchUpInside];
     
-    // [self test];
-    [self test1];
+    self.btn_pcm = [self.view viewWithTag:4];
+    [self.btn_pcm addTarget:self action:@selector(btn_pcm_clicked) forControlEvents:UIControlEventTouchUpInside];
     
+    // [self test];
+    // [self test1];
+    // [self test2];
+    // [self test3];
+    [self test4];
+    
+    [self test5];
+    
+}
+
+-(void)test5{
+    NSString*home = NSHomeDirectory();
+    NSString *documentsDir = [home stringByAppendingString:@"/Documents"];
+    NSLog(@"documentsDir: %@",documentsDir);
+    
+    NSString*txt1 = @"你好，世界！";
+    NSData *data = [txt1 dataUsingEncoding:NSUTF8StringEncoding];
+    [data writeToFile:[NSString stringWithFormat:@"%@/test_1111.txt",documentsDir] atomically:YES];
+    txt1 = @"hello world!";
+    data = [txt1 dataUsingEncoding:NSUTF8StringEncoding];
+    [data writeToFile:[NSString stringWithFormat:@"%@/test_1111.txt",documentsDir] atomically:YES];
+    
+    [FileUtil appendToFile:[NSString stringWithFormat:@"%@/test_1111.txt",documentsDir] data:data];
+    [FileUtil appendToFile:[NSString stringWithFormat:@"%@/test_1111.txt",documentsDir] data:data];
+    
+    [FileUtil readDataFromFile:[NSString stringWithFormat:@"%@/test_1111.txt",documentsDir] bufLen:2000 block:^(long len,NSData*data){
+        if(len>0){
+            NSLog(@"data len: %lu",(unsigned long)[data length]);
+        }else{
+            NSLog(@"read file end ......");
+        }
+    }];
+    
+    NSLog(@"date: %@",[DateUtil stringFromDate:[NSDate date]]);
+    
+}
+
+-(void)btn_pcm_clicked{
+    NSLog(@"btn_pcm_clicked ......");
+    if (!self.audioQueuePlay) {
+        self.audioQueuePlay = [[AudioQueuePlay alloc]init];
+    }
+    
+    dispatch_queue_t play_pcm_q = dispatch_queue_create("play_pcm_q", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(play_pcm_q, ^{
+        // 读文件
+        NSBundle*mainBundle = [NSBundle mainBundle];
+        // 放在主工程中的自定义bundle
+        NSString*test_bundle_path = [mainBundle pathForResource:@"test" ofType:@"bundle"];
+        NSLog(@"test_bundle_path: %@",test_bundle_path);
+        NSBundle*test_bundle=[NSBundle bundleWithPath:test_bundle_path];
+        // 获取自定义bundle中的文件
+        NSString*test_a_path = [test_bundle pathForResource:@"test" ofType:@"pcm"];
+        NSLog(@"test_pcm_path: %@",test_a_path);
+        
+        BOOL b = [[NSFileManager defaultManager]fileExistsAtPath:test_a_path];
+        if (b) {
+            NSLog(@"test_pcm 存在");
+        }
+        
+        NSFileHandle *fileHandle = [NSFileHandle fileHandleForReadingAtPath:test_a_path];
+        NSInteger count = 0;
+        NSInteger dataLength = MIN_SIZE_PER_FRAME;
+        NSData *data = nil;
+        
+        while (YES) {
+            [fileHandle seekToFileOffset:count*dataLength];
+            data = [fileHandle readDataOfLength:dataLength];
+            
+            if (!data||[data length] <= 0) {
+                break;
+            }
+            NSUInteger len = [data length];
+            if (len<MIN_SIZE_PER_FRAME) {
+                data = [[NSData alloc]initWithBytes:data.bytes length:MIN_SIZE_PER_FRAME];
+            }
+            
+            [self.audioQueuePlay playWithData:data];
+            
+            count++;
+        }
+        
+        [fileHandle closeFile];
+        
+        Byte void_data[MIN_SIZE_PER_FRAME] = {0};
+        data = [[NSData alloc]initWithBytes:void_data length:MIN_SIZE_PER_FRAME];
+        [self.audioQueuePlay playWithData:data];
+        [self.audioQueuePlay resetPlay];
+    });
+}
+
+-(void)test4{
+    [self getNowTimeTimestamp];
+}
+
+-(NSString*)getNowTimeTimestamp{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    // 设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    
+    // 设置时区,这个对于时间的处理有时很重要
+    NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    
+    [formatter setTimeZone:timeZone];
+    
+    NSDate *datenow = [NSDate date];
+    
+    // 单位是秒
+    NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[datenow timeIntervalSince1970]];
+    
+    NSLog(@"timeSp: %@",timeSp);
+    
+    return timeSp;
+}
+
+#pragma mark 直接调用cpp
+-(void)test3{
+    cpp_demo1_test1();
+    cpp_demo1_test2();
+}
+
+-(void)test2{
+    @synchronized (self) {
+        NSLog(@"test2 synchronized ...... 1");
+        @synchronized (self) {
+            NSLog(@"test2 synchronized ...... 2");
+        }
+    }
 }
 
 -(void)test1{

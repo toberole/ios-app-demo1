@@ -1,8 +1,5 @@
 #import "AudioQueuePlay.h"
 
-#define MIN_SIZE_PER_FRAME 2000
-#define QUEUE_BUFFER_SIZE 3      //队列缓冲个数
-
 @interface AudioQueuePlay() {
     //音频播放队列
     AudioQueueRef audioQueue;
@@ -33,7 +30,7 @@
         // 播放PCM使用
         if (_audioDescription.mSampleRate <= 0) {
             //设置音频参数
-            _audioDescription.mSampleRate = 8000.0;//采样率
+            _audioDescription.mSampleRate = 16000.0;//采样率
             _audioDescription.mFormatID = kAudioFormatLinearPCM;
             // 下面这个是保存音频数据的方式的说明，如可以根据大端字节序或小端字节序，浮点数或整数以及不同体位去保存数据
             _audioDescription.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked;
@@ -60,12 +57,12 @@
             
             osState = AudioQueueAllocateBuffer(audioQueue, MIN_SIZE_PER_FRAME, &audioQueueBuffers[i]);
             
-            printf("第 %d 个AudioQueueAllocateBuffer 初始化结果 %d (0表示成功)", i + 1, osState);
+            printf("第 %d 个AudioQueueAllocateBuffer 初始化结果 %d (0表示成功)\n", i + 1, (int)osState);
         }
         
         osState = AudioQueueStart(audioQueue, NULL);
         if (osState != noErr) {
-            printf("AudioQueueStart Error");
+            printf("AudioQueueStart Error\n");
         }
     }
     return self;
@@ -79,7 +76,6 @@
 
 // 播放相关
 -(void)playWithData:(NSData *)data {
-    
     [sysnLock lock];
     
     tempData = [NSMutableData new];
@@ -110,7 +106,7 @@
     free(bytes);
     AudioQueueEnqueueBuffer(audioQueue, audioQueueBuffers[i], 0, NULL);
     
-    printf("本次播放数据大小: %lu", len);
+    printf("本次播放数据大小: %lu\n", (unsigned long)len);
     [sysnLock unlock];
 }
 
@@ -137,7 +133,6 @@ static void AudioPlayerAQInputCallback(void* inUserData,AudioQueueRef audioQueue
 // ************************** 内存回收 **********************************
 
 - (void)dealloc {
-    
     if (audioQueue != nil) {
         AudioQueueStop(audioQueue,true);
     }

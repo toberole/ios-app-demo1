@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18089288259C7D3E003F3CA7 /* libios_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18089287259C7D3E003F3CA7 /* libios_lib.a */; };
 		180892CF25A48D10003F3CA7 /* aaa in Resources */ = {isa = PBXBuildFile; fileRef = 180892CE25A48D10003F3CA7 /* aaa */; };
 		180892D125A48E53003F3CA7 /* test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180892D025A48E53003F3CA7 /* test.bundle */; };
 		180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D225A56C71003F3CA7 /* Storyboard1.storyboard */; };
 		180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */; };
 		180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D625A572A5003F3CA7 /* Storyboard3.storyboard */; };
+		1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930925A9C75D003F3CA7 /* cpp_demo1.cpp */; };
+		1808930E25A9CAB6003F3CA7 /* cpp_demo2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */; };
 		18A68880259766DD00FF3426 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6887F259766DD00FF3426 /* FileUtil.m */; };
 		18A68883259842FB00FF3426 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68882259842FB00FF3426 /* BaseViewController.m */; };
 		18A68886259843B300FF3426 /* POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68885259843B300FF3426 /* POPAnimation.m */; };
@@ -20,6 +21,9 @@
 		18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68897259875E700FF3426 /* SafeMutableDictionary.m */; };
 		18A6889D2598863500FF3426 /* test2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A6889C2598863500FF3426 /* test2.storyboard */; };
 		18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18A688A4259893A000FF3426 /* TestWrapper.mm */; };
+		18A865FA25AD62A900FE0468 /* AudioQueuePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 180892DA25A57332003F3CA7 /* AudioQueuePlay.m */; };
+		18A865FD25AD769400FE0468 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A865FC25AD769400FE0468 /* DateUtil.m */; };
+		18A8661125B06CFB00FE0468 /* libios_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A8661025B06CFA00FE0468 /* libios_lib.a */; };
 		18BFC10525959E0700E67817 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC10425959E0700E67817 /* AppDelegate.m */; };
 		18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BFC10725959E0700E67817 /* SceneDelegate.m */; };
 		18BFC10E25959E0700E67817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC10C25959E0700E67817 /* Main.storyboard */; };
@@ -38,7 +42,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18089287259C7D3E003F3CA7 /* libios_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libios_lib.a; path = ../../../../../Desktop/libios_lib.a; sourceTree = "<group>"; };
 		180892CE25A48D10003F3CA7 /* aaa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aaa; sourceTree = "<group>"; };
 		180892D025A48E53003F3CA7 /* test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = test.bundle; sourceTree = "<group>"; };
 		180892D225A56C71003F3CA7 /* Storyboard1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
@@ -46,6 +49,10 @@
 		180892D625A572A5003F3CA7 /* Storyboard3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard3.storyboard; sourceTree = "<group>"; };
 		180892D925A57332003F3CA7 /* AudioQueuePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlay.h; sourceTree = "<group>"; };
 		180892DA25A57332003F3CA7 /* AudioQueuePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlay.m; sourceTree = "<group>"; };
+		1808930925A9C75D003F3CA7 /* cpp_demo1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_demo1.cpp; sourceTree = "<group>"; };
+		1808930A25A9C75D003F3CA7 /* cpp_demo1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo1.hpp; sourceTree = "<group>"; };
+		1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_demo2.cpp; sourceTree = "<group>"; };
+		1808930D25A9CAB6003F3CA7 /* cpp_demo2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo2.hpp; sourceTree = "<group>"; };
 		18A6887E259766DD00FF3426 /* FileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		18A6887F259766DD00FF3426 /* FileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		18A68881259842FB00FF3426 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -60,6 +67,9 @@
 		18A688A22598934A00FF3426 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		18A688A3259893A000FF3426 /* TestWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWrapper.h; sourceTree = "<group>"; };
 		18A688A4259893A000FF3426 /* TestWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestWrapper.mm; sourceTree = "<group>"; };
+		18A865FB25AD769400FE0468 /* DateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		18A865FC25AD769400FE0468 /* DateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		18A8661025B06CFA00FE0468 /* libios_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libios_lib.a; sourceTree = "<group>"; };
 		18BFC10025959E0700E67817 /* ios-app-demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-app-demo1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BFC10325959E0700E67817 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18BFC10425959E0700E67817 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18089288259C7D3E003F3CA7 /* libios_lib.a in Frameworks */,
+				18A8661125B06CFB00FE0468 /* libios_lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +118,17 @@
 			path = audio;
 			sourceTree = "<group>";
 		};
+		1808930825A9C6A7003F3CA7 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				1808930925A9C75D003F3CA7 /* cpp_demo1.cpp */,
+				1808930A25A9C75D003F3CA7 /* cpp_demo1.hpp */,
+				1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */,
+				1808930D25A9CAB6003F3CA7 /* cpp_demo2.hpp */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
 		18A6887D259766BA00FF3426 /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +138,8 @@
 				18A688942598756600FF3426 /* SafeMutableArray.m */,
 				18A68896259875E700FF3426 /* SafeMutableDictionary.h */,
 				18A68897259875E700FF3426 /* SafeMutableDictionary.m */,
+				18A865FB25AD769400FE0468 /* DateUtil.h */,
+				18A865FC25AD769400FE0468 /* DateUtil.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -141,7 +164,7 @@
 		18A688A6259897D000FF3426 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				18089287259C7D3E003F3CA7 /* libios_lib.a */,
+				18A8661025B06CFA00FE0468 /* libios_lib.a */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -167,28 +190,29 @@
 			isa = PBXGroup;
 			children = (
 				180892CE25A48D10003F3CA7 /* aaa */,
+				180892D825A57332003F3CA7 /* audio */,
+				18BFC1242595A28300E67817 /* controller */,
+				1808930825A9C6A7003F3CA7 /* cpp */,
 				18BFC15F2597077C00E67817 /* files */,
+				18BFC1562596DDF400E67817 /* layout */,
+				18A688A6259897D000FF3426 /* libs */,
+				18BFC12D25962CB400E67817 /* ocbase */,
 				180892D025A48E53003F3CA7 /* test.bundle */,
-				18BFC10325959E0700E67817 /* AppDelegate.h */,
+				18A6887D259766BA00FF3426 /* util */,
+				18A688A12598931F00FF3426 /* wrapper */,
 				18BFC1552596DD9E00E67817 /* README.h */,
-				18BFC10625959E0700E67817 /* SceneDelegate.h */,
-				18BFC10425959E0700E67817 /* AppDelegate.m */,
 				18BFC11525959E0800E67817 /* main.m */,
+				18BFC10325959E0700E67817 /* AppDelegate.h */,
+				18BFC10425959E0700E67817 /* AppDelegate.m */,
+				18BFC10F25959E0800E67817 /* Assets.xcassets */,
+				18BFC10625959E0700E67817 /* SceneDelegate.h */,
 				18BFC10725959E0700E67817 /* SceneDelegate.m */,
-				18BFC11425959E0800E67817 /* Info.plist */,
+				18BFC11125959E0800E67817 /* LaunchScreen.storyboard */,
 				180892D225A56C71003F3CA7 /* Storyboard1.storyboard */,
 				180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */,
 				180892D625A572A5003F3CA7 /* Storyboard3.storyboard */,
-				18BFC10F25959E0800E67817 /* Assets.xcassets */,
-				180892D825A57332003F3CA7 /* audio */,
-				18BFC1242595A28300E67817 /* controller */,
-				18BFC11125959E0800E67817 /* LaunchScreen.storyboard */,
-				18BFC1562596DDF400E67817 /* layout */,
-				18A688A6259897D000FF3426 /* libs */,
 				18BFC10C25959E0700E67817 /* Main.storyboard */,
-				18BFC12D25962CB400E67817 /* ocbase */,
-				18A6887D259766BA00FF3426 /* util */,
-				18A688A12598931F00FF3426 /* wrapper */,
+				18BFC11425959E0800E67817 /* Info.plist */,
 			);
 			path = "ios-app-demo1";
 			sourceTree = "<group>";
@@ -312,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A865FA25AD62A900FE0468 /* AudioQueuePlay.m in Sources */,
 				18A68886259843B300FF3426 /* POPAnimation.m in Sources */,
 				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
 				18BFC10525959E0700E67817 /* AppDelegate.m in Sources */,
@@ -319,11 +344,14 @@
 				18BFC11625959E0800E67817 /* main.m in Sources */,
 				18BFC12B2595A82700E67817 /* FileViewController.m in Sources */,
 				18BFC1272595A2A700E67817 /* ViewController.m in Sources */,
+				1808930E25A9CAB6003F3CA7 /* cpp_demo2.cpp in Sources */,
 				18A68880259766DD00FF3426 /* FileUtil.m in Sources */,
 				18A688952598756600FF3426 /* SafeMutableArray.m in Sources */,
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
 				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
+				1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */,
+				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
 			);
@@ -465,11 +493,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92KCLFU3AG;
 				INFOPLIST_FILE = "ios-app-demo1/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,11 +519,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92KCLFU3AG;
 				INFOPLIST_FILE = "ios-app-demo1/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
