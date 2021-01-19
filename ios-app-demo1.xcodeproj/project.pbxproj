@@ -14,6 +14,10 @@
 		180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D625A572A5003F3CA7 /* Storyboard3.storyboard */; };
 		1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930925A9C75D003F3CA7 /* cpp_demo1.cpp */; };
 		1808930E25A9CAB6003F3CA7 /* cpp_demo2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */; };
+		1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */; };
+		1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */; };
+		1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862DD2125B6F48100F80204 /* OpenGLController.m */; };
+		1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD2225B6F48100F80204 /* OpenGLController.xib */; };
 		18A68880259766DD00FF3426 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6887F259766DD00FF3426 /* FileUtil.m */; };
 		18A68883259842FB00FF3426 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68882259842FB00FF3426 /* BaseViewController.m */; };
 		18A68886259843B300FF3426 /* POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68885259843B300FF3426 /* POPAnimation.m */; };
@@ -53,6 +57,11 @@
 		1808930A25A9C75D003F3CA7 /* cpp_demo1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo1.hpp; sourceTree = "<group>"; };
 		1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_demo2.cpp; sourceTree = "<group>"; };
 		1808930D25A9CAB6003F3CA7 /* cpp_demo2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo2.hpp; sourceTree = "<group>"; };
+		1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		1862DD2025B6F48100F80204 /* OpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLController.h; sourceTree = "<group>"; };
+		1862DD2125B6F48100F80204 /* OpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLController.m; sourceTree = "<group>"; };
+		1862DD2225B6F48100F80204 /* OpenGLController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenGLController.xib; sourceTree = "<group>"; };
 		18A6887E259766DD00FF3426 /* FileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		18A6887F259766DD00FF3426 /* FileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		18A68881259842FB00FF3426 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -129,6 +138,15 @@
 			path = cpp;
 			sourceTree = "<group>";
 		};
+		1862DD1B25B6F22E00F80204 /* opengl */ = {
+			isa = PBXGroup;
+			children = (
+				1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */,
+				1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */,
+			);
+			path = opengl;
+			sourceTree = "<group>";
+		};
 		18A6887D259766BA00FF3426 /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +207,7 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				1862DD1B25B6F22E00F80204 /* opengl */,
 				180892CE25A48D10003F3CA7 /* aaa */,
 				180892D825A57332003F3CA7 /* audio */,
 				18BFC1242595A28300E67817 /* controller */,
@@ -234,6 +253,9 @@
 				18A68882259842FB00FF3426 /* BaseViewController.m */,
 				18A68884259843B300FF3426 /* POPAnimation.h */,
 				18A68885259843B300FF3426 /* POPAnimation.m */,
+				1862DD2025B6F48100F80204 /* OpenGLController.h */,
+				1862DD2125B6F48100F80204 /* OpenGLController.m */,
+				1862DD2225B6F48100F80204 /* OpenGLController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -326,6 +348,9 @@
 				18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
+				1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */,
+				1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */,
+				1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +365,7 @@
 				18A68886259843B300FF3426 /* POPAnimation.m in Sources */,
 				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
 				18BFC10525959E0700E67817 /* AppDelegate.m in Sources */,
+				1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */,
 				18A68883259842FB00FF3426 /* BaseViewController.m in Sources */,
 				18BFC11625959E0800E67817 /* main.m in Sources */,
 				18BFC12B2595A82700E67817 /* FileViewController.m in Sources */,

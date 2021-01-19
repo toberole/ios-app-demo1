@@ -8,6 +8,7 @@
 #import "AudioQueuePlay.h"
 #import "FileUtil.h"
 #import "DateUtil.h"
+#import "OpenGLController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,8 @@
 @property (nonatomic,strong)UIButton*btn_NavigationControllerDemo;
 
 @property (nonatomic,strong)UIButton*btn_pcm;
+
+@property (nonatomic,strong)UIButton*btn_opengl;
 
 @property (nonatomic,strong)AudioQueuePlay*audioQueuePlay;
 
@@ -39,6 +42,10 @@
     
     self.btn_pcm = [self.view viewWithTag:4];
     [self.btn_pcm addTarget:self action:@selector(btn_pcm_clicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.btn_opengl = [self.view viewWithTag:5];
+    [self.btn_opengl addTarget:self action:@selector(btn_opengl_clicked) forControlEvents:UIControlEventTouchUpInside];
+    
     
     // [self test];
     // [self test1];
@@ -75,6 +82,11 @@
     
     NSLog(@"date: %@",[DateUtil stringFromDate:[NSDate date]]);
     
+}
+
+-(void)btn_opengl_clicked{
+    OpenGLController*cv = [[OpenGLController alloc]init];
+    [[self navigationController]pushViewController:cv animated:YES];
 }
 
 -(void)btn_pcm_clicked{
