@@ -18,6 +18,14 @@
  
  shift + cmd + 2 导出应用数据
  
+ 手动安装xcode 与appstore安装有区别：
+ sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+ 
+ 
+ xcodebuild -target tts-lib -configuration Debug -sdk iphoneos -arch armv7 -arch arm64 -arch armv7s -arch arm64e
+
+ xcodebuild -target tts-lib -configuration Debug -sdk iphonesimulator -arch i386 -arch x86_64
+ 
  */
 
 #endif /* README_h */

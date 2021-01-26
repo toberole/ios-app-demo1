@@ -24,6 +24,12 @@
 
 @property (nonatomic,strong)AudioQueuePlay*audioQueuePlay;
 
+@property (nonatomic,strong)NSConditionLock * conditionLock;
+
+@property (nonatomic,strong)NSCondition*cond;
+
+@property (atomic,assign)int count;
+
 @end
 
 @implementation ViewController
@@ -51,10 +57,80 @@
     // [self test1];
     // [self test2];
     // [self test3];
-    [self test4];
+//    [self test4];
+//
+//    [self test5];
+    [self test6];
     
-    [self test5];
+//    [self test7];
+}
+
+/**
+ 用法类似java的Object#wait notify
+ */
+-(void)test7{
+    if (!self.cond) {
+        self.cond = [[NSCondition alloc]init];
+        for (int i = 0; i<50; i++) {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+                [self producers];
+            });
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+                [self consumers];
+            });
+        }
+    }
+}
+
+-(void)producers{
+    [self.cond lock];
+    while (self.count!=0) {
+        [self.cond wait];
+    }
     
+    NSLog(@"producers count: %d",self.count);
+    self.count++;
+    [self.cond signal];
+    [self.cond unlock];
+}
+
+-(void)consumers{
+    [self.cond lock];
+    while (self.count!=1) {
+        [self.cond wait];
+    }
+    
+    NSLog(@"consumers count: %d",self.count);
+    self.count--;
+    [self.cond signal];
+    [self.cond unlock];
+}
+
+/**
+ NSConditionLock
+ */
+-(void)test6{
+    self.conditionLock = [[NSConditionLock alloc]init];
+    __block int n = 10;
+    
+    dispatch_queue_t test_q = dispatch_queue_create("test_q", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(test_q, ^{
+        while (n>0) {
+            [self.conditionLock lockWhenCondition:1];
+            NSLog(@"test6 1...... n: %d",n);
+            n--;
+            [self.conditionLock unlockWithCondition:0];
+        }
+    });
+    
+    dispatch_async(test_q, ^{
+        while (n>0) {
+            [self.conditionLock lock];
+                  NSLog(@"test6 2...... n: %d",n);
+            [self.conditionLock unlockWithCondition:1];
+        }
+    });
 }
 
 -(void)test5{
