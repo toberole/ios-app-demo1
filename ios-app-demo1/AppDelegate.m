@@ -1,5 +1,3 @@
-
-
 #import "AppDelegate.h"
 #import "ViewController.h"
 
@@ -8,7 +6,6 @@
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 用制定的stroyboard构建ViewController

@@ -41,21 +41,29 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="OpenGL"/>
                             </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4P-Yq-QKT">
+                                <rect key="frame" x="115" y="314" width="184" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Life"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Kn-9h-U1g" secondAttribute="trailing" constant="115" id="2NN-ul-CC0"/>
                             <constraint firstItem="ugn-wI-VFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="3yv-RJ-5ji"/>
+                            <constraint firstItem="z4P-Yq-QKT" firstAttribute="top" secondItem="5Rp-7P-sXu" secondAttribute="bottom" constant="20" id="4Lh-sT-PfJ"/>
                             <constraint firstItem="b1S-mM-XAF" firstAttribute="top" secondItem="JZe-qa-VZV" secondAttribute="bottom" constant="20" id="4Uy-0F-wEs"/>
                             <constraint firstItem="JZe-qa-VZV" firstAttribute="top" secondItem="ugn-wI-VFf" secondAttribute="bottom" constant="20" id="D7J-jn-Bk6"/>
                             <constraint firstItem="JZe-qa-VZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="DZK-Od-y4o"/>
                             <constraint firstItem="b1S-mM-XAF" firstAttribute="top" secondItem="JZe-qa-VZV" secondAttribute="bottom" constant="20" id="PUf-Bp-ONM"/>
                             <constraint firstItem="b1S-mM-XAF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="SwH-Tn-iXz"/>
+                            <constraint firstItem="z4P-Yq-QKT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="TFH-nj-qGO"/>
                             <constraint firstItem="0Kn-9h-U1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="TZh-fF-P4B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b1S-mM-XAF" secondAttribute="trailing" constant="115" id="U1t-be-4Vg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JZe-qa-VZV" secondAttribute="trailing" constant="115" id="XNc-wM-Shs"/>
                             <constraint firstItem="5Rp-7P-sXu" firstAttribute="top" secondItem="0Kn-9h-U1g" secondAttribute="bottom" constant="20" id="awn-Fn-x2g"/>
                             <constraint firstItem="5Rp-7P-sXu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="e7W-bT-6fE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z4P-Yq-QKT" secondAttribute="trailing" constant="115" id="gao-qS-Ulp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Rp-7P-sXu" secondAttribute="trailing" constant="115" id="hZk-Iy-5O3"/>
                             <constraint firstItem="0Kn-9h-U1g" firstAttribute="top" secondItem="b1S-mM-XAF" secondAttribute="bottom" constant="20" id="i3Q-oZ-lbX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ugn-wI-VFf" secondAttribute="trailing" constant="115" id="tnV-03-tqt"/>

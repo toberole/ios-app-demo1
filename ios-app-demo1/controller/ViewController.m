@@ -9,6 +9,8 @@
 #import "FileUtil.h"
 #import "DateUtil.h"
 #import "OpenGLController.h"
+#import "LifeCycleViewController.h"
+
 
 @interface ViewController ()
 
@@ -21,6 +23,8 @@
 @property (nonatomic,strong)UIButton*btn_pcm;
 
 @property (nonatomic,strong)UIButton*btn_opengl;
+
+@property (nonatomic,strong)UIButton*btn_life;
 
 @property (nonatomic,strong)AudioQueuePlay*audioQueuePlay;
 
@@ -46,6 +50,9 @@
     self.btn_opengl = [self.view viewWithTag:5];
     [self.btn_opengl addTarget:self action:@selector(btn_opengl_clicked) forControlEvents:UIControlEventTouchUpInside];
     
+    
+    self.btn_life = [self.view viewWithTag:6];
+    [self.btn_life addTarget:self action:@selector(btn_life_clicked) forControlEvents:UIControlEventTouchUpInside];
     
     // [self test];
     // [self test1];
@@ -87,6 +94,19 @@
 -(void)btn_opengl_clicked{
     OpenGLController*cv = [[OpenGLController alloc]init];
     [[self navigationController]pushViewController:cv animated:YES];
+}
+
+-(void)btn_life_clicked{
+    NSLog(@"btn_life_clicked ......");
+    
+    LifeCycleViewController *v = [[LifeCycleViewController alloc]init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:v];
+    
+    // 进入这个UINavigationController的页面时可以：
+    [self presentViewController:navigationController animated:YES completion:^{
+        NSLog(@"presentViewController completion ......");
+    }];
+    
 }
 
 -(void)btn_pcm_clicked{
@@ -291,8 +311,6 @@
  UINavigationController拥有viewControllers，navigationBar，toolBar这些属性。其中viewControllers是一个数组，在这个数组中以堆栈的形式存放着多个UIViewController。堆栈是先进后出的原则。UINavigationController的中间的View显示的是位于堆栈顶部的UIViewController的View。
  
  位于堆栈最底部的UIViewController我们称之为rootViewController(根视图控制器),一个UINavigationController的UIViewController堆栈中至少有一个视图控制器，也可以说一定存在根视图控制器。我们可以创建一个UIViewController，然后使用系统提供的方法让这个UIViewController进栈，也可以使用系统提供的方法让UIViewController堆栈中的视图控制器出栈。
- 
- 
  
  */
 -(void)btn_NavigationControllerDemo_clicked{

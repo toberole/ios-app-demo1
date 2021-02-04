@@ -18,6 +18,8 @@
 		1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */; };
 		1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862DD2125B6F48100F80204 /* OpenGLController.m */; };
 		1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD2225B6F48100F80204 /* OpenGLController.xib */; };
+		18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */; };
+		18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */; };
 		18A68880259766DD00FF3426 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6887F259766DD00FF3426 /* FileUtil.m */; };
 		18A68883259842FB00FF3426 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68882259842FB00FF3426 /* BaseViewController.m */; };
 		18A68886259843B300FF3426 /* POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68885259843B300FF3426 /* POPAnimation.m */; };
@@ -62,6 +64,9 @@
 		1862DD2025B6F48100F80204 /* OpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLController.h; sourceTree = "<group>"; };
 		1862DD2125B6F48100F80204 /* OpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLController.m; sourceTree = "<group>"; };
 		1862DD2225B6F48100F80204 /* OpenGLController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenGLController.xib; sourceTree = "<group>"; };
+		18995A3F25CA4E61007B89D9 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
+		18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
+		18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
 		18A6887E259766DD00FF3426 /* FileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		18A6887F259766DD00FF3426 /* FileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		18A68881259842FB00FF3426 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -256,6 +261,9 @@
 				1862DD2025B6F48100F80204 /* OpenGLController.h */,
 				1862DD2125B6F48100F80204 /* OpenGLController.m */,
 				1862DD2225B6F48100F80204 /* OpenGLController.xib */,
+				18995A3F25CA4E61007B89D9 /* LifeCycleViewController.h */,
+				18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */,
+				18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 				180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */,
 				180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */,
 				18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */,
+				18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
 				1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */,
@@ -376,6 +385,7 @@
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
 				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
+				18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */,
 				1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */,
 				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,

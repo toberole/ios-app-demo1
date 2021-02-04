@@ -18,6 +18,9 @@
  
  shift + cmd + 2 导出应用数据
  
+ // 支持外部访问iphone 存储卡
+ Application supports iTunes file sharing YES
+ 
  */
 
 #endif /* README_h */
