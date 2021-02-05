@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180892CF25A48D10003F3CA7 /* aaa in Resources */ = {isa = PBXBuildFile; fileRef = 180892CE25A48D10003F3CA7 /* aaa */; };
 		180892D125A48E53003F3CA7 /* test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180892D025A48E53003F3CA7 /* test.bundle */; };
 		180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D225A56C71003F3CA7 /* Storyboard1.storyboard */; };
 		180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */; };
 		180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D625A572A5003F3CA7 /* Storyboard3.storyboard */; };
 		1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930925A9C75D003F3CA7 /* cpp_demo1.cpp */; };
 		1808930E25A9CAB6003F3CA7 /* cpp_demo2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */; };
+		184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */ = {isa = PBXBuildFile; fileRef = 184E936425BFB974009FF8EB /* sdk_merge_tool.sh */; };
+		184E936825BFF333009FF8EB /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 184E936725BFF333009FF8EB /* Queue.m */; };
 		1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */; };
 		1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */; };
 		1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862DD2125B6F48100F80204 /* OpenGLController.m */; };
@@ -48,7 +49,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		180892CE25A48D10003F3CA7 /* aaa */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aaa; sourceTree = "<group>"; };
 		180892D025A48E53003F3CA7 /* test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = test.bundle; sourceTree = "<group>"; };
 		180892D225A56C71003F3CA7 /* Storyboard1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
 		180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
@@ -59,6 +59,9 @@
 		1808930A25A9C75D003F3CA7 /* cpp_demo1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo1.hpp; sourceTree = "<group>"; };
 		1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_demo2.cpp; sourceTree = "<group>"; };
 		1808930D25A9CAB6003F3CA7 /* cpp_demo2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo2.hpp; sourceTree = "<group>"; };
+		184E936425BFB974009FF8EB /* sdk_merge_tool.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = sdk_merge_tool.sh; sourceTree = "<group>"; };
+		184E936625BFF333009FF8EB /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		184E936725BFF333009FF8EB /* Queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
 		1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
 		1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		1862DD2025B6F48100F80204 /* OpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLController.h; sourceTree = "<group>"; };
@@ -143,6 +146,15 @@
 			path = cpp;
 			sourceTree = "<group>";
 		};
+		184E936325BFB947009FF8EB /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				184E936425BFB974009FF8EB /* sdk_merge_tool.sh */,
+				18BFC1552596DD9E00E67817 /* README.h */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
 		1862DD1B25B6F22E00F80204 /* opengl */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,8 @@
 				18A68897259875E700FF3426 /* SafeMutableDictionary.m */,
 				18A865FB25AD769400FE0468 /* DateUtil.h */,
 				18A865FC25AD769400FE0468 /* DateUtil.m */,
+				184E936625BFF333009FF8EB /* Queue.h */,
+				184E936725BFF333009FF8EB /* Queue.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -195,6 +209,7 @@
 		18BFC0F725959E0700E67817 = {
 			isa = PBXGroup;
 			children = (
+				184E936325BFB947009FF8EB /* doc */,
 				18BFC10225959E0700E67817 /* ios-app-demo1 */,
 				18BFC10125959E0700E67817 /* Products */,
 				18A6889E259892EF00FF3426 /* Frameworks */,
@@ -213,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				1862DD1B25B6F22E00F80204 /* opengl */,
-				180892CE25A48D10003F3CA7 /* aaa */,
 				180892D825A57332003F3CA7 /* audio */,
 				18BFC1242595A28300E67817 /* controller */,
 				1808930825A9C6A7003F3CA7 /* cpp */,
@@ -224,7 +238,6 @@
 				180892D025A48E53003F3CA7 /* test.bundle */,
 				18A6887D259766BA00FF3426 /* util */,
 				18A688A12598931F00FF3426 /* wrapper */,
-				18BFC1552596DD9E00E67817 /* README.h */,
 				18BFC11525959E0800E67817 /* main.m */,
 				18BFC10325959E0700E67817 /* AppDelegate.h */,
 				18BFC10425959E0700E67817 /* AppDelegate.m */,
@@ -343,8 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180892CF25A48D10003F3CA7 /* aaa in Resources */,
 				18BFC1602597077C00E67817 /* files in Resources */,
+				184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */,
 				18A6889D2598863500FF3426 /* test2.storyboard in Resources */,
 				180892D125A48E53003F3CA7 /* test.bundle in Resources */,
 				180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */,
@@ -385,7 +398,11 @@
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
 				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
+
 				18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */,
+
+				184E936825BFF333009FF8EB /* Queue.m in Sources */,
+
 				1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */,
 				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
