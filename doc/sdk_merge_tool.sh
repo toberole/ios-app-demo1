@@ -2,10 +2,9 @@
 
 mkdir temp
 
-iphone_lib=$1
-simulator_lib=$2
-output_sdk=$3
-
+read -p "iphone_lib name:" iphone_lib
+read -p "simulator_lib name:" simulator_lib
+read -p "output_sdk name:" output_sdk
 
 pwd
 

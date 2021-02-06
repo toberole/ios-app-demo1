@@ -18,18 +18,17 @@
  
  shift + cmd + 2 导出应用数据
  
-<<<<<<< HEAD:ios-app-demo1/README.h
  // 支持外部访问iphone 存储卡
  Application supports iTunes file sharing YES
-=======
+ 
  手动安装xcode 与appstore安装有区别：
  sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
  
- 
+ // 命令打包 armv7 armv7s arm64 arm64e
  xcodebuild -target tts-lib -configuration Debug -sdk iphoneos -arch armv7 -arch arm64 -arch armv7s -arch arm64e
-
+ 
+ // 命令打包 i386 x86_64
  xcodebuild -target tts-lib -configuration Debug -sdk iphonesimulator -arch i386 -arch x86_64
->>>>>>> 468c8edc77924e6b9771aa079867187d91166368:doc/README.h
  
  */
 

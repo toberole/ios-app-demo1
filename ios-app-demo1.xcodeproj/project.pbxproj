@@ -46,6 +46,16 @@
 		18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC13C25963B8700E67817 /* NavigationControllerDemo.xib */; };
 		18BFC1582596DE1000E67817 /* test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC1572596DE1000E67817 /* test1.storyboard */; };
 		18BFC1602597077C00E67817 /* files in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC15F2597077C00E67817 /* files */; };
+		18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC90425CD3415007A7459 /* build_sdk.sh */; };
+		18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC91925CE3B75007A7459 /* Test1ViewController.m */; };
+		18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */; };
+		18ECC91F25CE6225007A7459 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC91E25CE6225007A7459 /* back.png */; };
+		18ECC92325CE8279007A7459 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC92125CE8279007A7459 /* Test2ViewController.m */; };
+		18ECC92425CE8279007A7459 /* Test2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC92225CE8279007A7459 /* Test2ViewController.xib */; };
+		18ECC92825CE8A6D007A7459 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC92625CE8A6D007A7459 /* Test3ViewController.m */; };
+		18ECC92925CE8A6D007A7459 /* Test3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC92725CE8A6D007A7459 /* Test3ViewController.xib */; };
+		18ECC92D25CE8F40007A7459 /* TestScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC92B25CE8F40007A7459 /* TestScrollViewViewController.m */; };
+		18ECC92E25CE8F40007A7459 /* TestScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC92C25CE8F40007A7459 /* TestScrollViewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +122,21 @@
 		18BFC1552596DD9E00E67817 /* README.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = README.h; sourceTree = "<group>"; };
 		18BFC1572596DE1000E67817 /* test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test1.storyboard; sourceTree = "<group>"; };
 		18BFC15F2597077C00E67817 /* files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = files; sourceTree = "<group>"; };
+		18ECC90425CD3415007A7459 /* build_sdk.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_sdk.sh; sourceTree = "<group>"; };
+		18ECC91725CD6B96007A7459 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		18ECC91825CE3B75007A7459 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
+		18ECC91925CE3B75007A7459 /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
+		18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test1ViewController.xib; sourceTree = "<group>"; };
+		18ECC91E25CE6225007A7459 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		18ECC92025CE8279007A7459 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		18ECC92125CE8279007A7459 /* Test2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		18ECC92225CE8279007A7459 /* Test2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test2ViewController.xib; sourceTree = "<group>"; };
+		18ECC92525CE8A6D007A7459 /* Test3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
+		18ECC92625CE8A6D007A7459 /* Test3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
+		18ECC92725CE8A6D007A7459 /* Test3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test3ViewController.xib; sourceTree = "<group>"; };
+		18ECC92A25CE8F40007A7459 /* TestScrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScrollViewViewController.h; sourceTree = "<group>"; };
+		18ECC92B25CE8F40007A7459 /* TestScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScrollViewViewController.m; sourceTree = "<group>"; };
+		18ECC92C25CE8F40007A7459 /* TestScrollViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestScrollViewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +174,10 @@
 		184E936325BFB947009FF8EB /* doc */ = {
 			isa = PBXGroup;
 			children = (
+				18ECC90425CD3415007A7459 /* build_sdk.sh */,
 				184E936425BFB974009FF8EB /* sdk_merge_tool.sh */,
 				18BFC1552596DD9E00E67817 /* README.h */,
+				18ECC91725CD6B96007A7459 /* README.md */,
 			);
 			path = doc;
 			sourceTree = "<group>";
@@ -227,6 +254,7 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				18ECC91D25CE620D007A7459 /* imgs */,
 				1862DD1B25B6F22E00F80204 /* opengl */,
 				180892D825A57332003F3CA7 /* audio */,
 				18BFC1242595A28300E67817 /* controller */,
@@ -277,6 +305,18 @@
 				18995A3F25CA4E61007B89D9 /* LifeCycleViewController.h */,
 				18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */,
 				18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */,
+				18ECC91825CE3B75007A7459 /* Test1ViewController.h */,
+				18ECC91925CE3B75007A7459 /* Test1ViewController.m */,
+				18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */,
+				18ECC92025CE8279007A7459 /* Test2ViewController.h */,
+				18ECC92125CE8279007A7459 /* Test2ViewController.m */,
+				18ECC92225CE8279007A7459 /* Test2ViewController.xib */,
+				18ECC92525CE8A6D007A7459 /* Test3ViewController.h */,
+				18ECC92625CE8A6D007A7459 /* Test3ViewController.m */,
+				18ECC92725CE8A6D007A7459 /* Test3ViewController.xib */,
+				18ECC92A25CE8F40007A7459 /* TestScrollViewViewController.h */,
+				18ECC92B25CE8F40007A7459 /* TestScrollViewViewController.m */,
+				18ECC92C25CE8F40007A7459 /* TestScrollViewViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -297,6 +337,14 @@
 				18A6889C2598863500FF3426 /* test2.storyboard */,
 			);
 			path = layout;
+			sourceTree = "<group>";
+		};
+		18ECC91D25CE620D007A7459 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				18ECC91E25CE6225007A7459 /* back.png */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,11 +405,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BFC1602597077C00E67817 /* files in Resources */,
+				18ECC92425CE8279007A7459 /* Test2ViewController.xib in Resources */,
 				184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */,
 				18A6889D2598863500FF3426 /* test2.storyboard in Resources */,
 				180892D125A48E53003F3CA7 /* test.bundle in Resources */,
 				180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */,
+				18ECC92925CE8A6D007A7459 /* Test3ViewController.xib in Resources */,
+				18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */,
 				18BFC1582596DE1000E67817 /* test1.storyboard in Resources */,
+				18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */,
 				18BFC11325959E0800E67817 /* LaunchScreen.storyboard in Resources */,
 				18BFC11025959E0800E67817 /* Assets.xcassets in Resources */,
 				180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */,
@@ -370,9 +422,11 @@
 				18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
+				18ECC91F25CE6225007A7459 /* back.png in Resources */,
 				1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */,
 				1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */,
 				1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */,
+				18ECC92E25CE8F40007A7459 /* TestScrollViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +439,7 @@
 			files = (
 				18A865FA25AD62A900FE0468 /* AudioQueuePlay.m in Sources */,
 				18A68886259843B300FF3426 /* POPAnimation.m in Sources */,
+				18ECC92825CE8A6D007A7459 /* Test3ViewController.m in Sources */,
 				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
 				18BFC10525959E0700E67817 /* AppDelegate.m in Sources */,
 				1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */,
@@ -397,12 +452,12 @@
 				18A688952598756600FF3426 /* SafeMutableArray.m in Sources */,
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
+				18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */,
+				18ECC92D25CE8F40007A7459 /* TestScrollViewViewController.m in Sources */,
 				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
-
+				18ECC92325CE8279007A7459 /* Test2ViewController.m in Sources */,
 				18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */,
-
 				184E936825BFF333009FF8EB /* Queue.m in Sources */,
-
 				1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */,
 				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,

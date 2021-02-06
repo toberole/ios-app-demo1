@@ -10,6 +10,9 @@
 #import "DateUtil.h"
 #import "OpenGLController.h"
 #import "LifeCycleViewController.h"
+#import "Test1ViewController.h"
+#import "Test2ViewController.h"
+#import "TestScrollViewViewController.h"
 
 
 @interface ViewController ()
@@ -36,6 +39,8 @@
 
 @end
 
+
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -60,6 +65,9 @@
     self.btn_life = [self.view viewWithTag:6];
     [self.btn_life addTarget:self action:@selector(btn_life_clicked) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton*test1 = [self.view viewWithTag:7];
+    [test1 addTarget:self action:@selector(btn_test1_clicked) forControlEvents:UIControlEventTouchUpInside];
+    
     // [self test];
     // [self test1];
     // [self test2];
@@ -70,6 +78,32 @@
     [self test6];
     
 //    [self test7];
+}
+
+-(void)btn_test1_clicked{
+    int test_index =3;
+    if (test_index==1) {
+        Test1ViewController*ui_vc = [[Test1ViewController alloc]init];
+        UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }else if (test_index==2){
+        Test2ViewController*ui_vc =[[Test2ViewController alloc]init];
+        UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }else if (test_index==3){
+        TestScrollViewViewController*ui_vc =[[TestScrollViewViewController alloc]init];
+        UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+
+    
+    
 }
 
 /**
