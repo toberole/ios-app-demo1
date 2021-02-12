@@ -46,6 +46,24 @@
 		18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC13C25963B8700E67817 /* NavigationControllerDemo.xib */; };
 		18BFC1582596DE1000E67817 /* test1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC1572596DE1000E67817 /* test1.storyboard */; };
 		18BFC1602597077C00E67817 /* files in Resources */ = {isa = PBXBuildFile; fileRef = 18BFC15F2597077C00E67817 /* files */; };
+		18E5D86125D24BD700CDF458 /* GCDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D86025D24BD700CDF458 /* GCDHelper.m */; };
+		18E5D86325D367A000CDF458 /* Storyboard4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D86225D367A000CDF458 /* Storyboard4.storyboard */; };
+		18E5D86825D3779500CDF458 /* GCDDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D86625D3779500CDF458 /* GCDDemoViewController.m */; };
+		18E5D86925D3779500CDF458 /* GCDDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D86725D3779500CDF458 /* GCDDemoViewController.xib */; };
+		18E5D86C25D38C9300CDF458 /* SGUIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D86B25D38C9300CDF458 /* SGUIView+Toast.m */; };
+		18E5D87025D3A01800CDF458 /* UIDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D86E25D3A01800CDF458 /* UIDemo1ViewController.m */; };
+		18E5D87125D3A01800CDF458 /* UIDemo1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D86F25D3A01800CDF458 /* UIDemo1ViewController.xib */; };
+		18E5D87525D3B44D00CDF458 /* UIDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D87325D3B44D00CDF458 /* UIDemo2ViewController.m */; };
+		18E5D87625D3B44D00CDF458 /* UIDemo2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D87425D3B44D00CDF458 /* UIDemo2ViewController.xib */; };
+		18E5D87A25D3D86F00CDF458 /* MyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D87825D3D86F00CDF458 /* MyTestViewController.m */; };
+		18E5D87B25D3D86F00CDF458 /* MyTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D87925D3D86F00CDF458 /* MyTestViewController.xib */; };
+		18E5D87D25D3E1C100CDF458 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D87C25D3E1C100CDF458 /* test.png */; };
+		18E5D88125D529E900CDF458 /* MyTestViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D87F25D529E900CDF458 /* MyTestViewController1.m */; };
+		18E5D88225D529E900CDF458 /* MyTestViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88025D529E900CDF458 /* MyTestViewController1.xib */; };
+		18E5D88425D62ADB00CDF458 /* Storyboard5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88325D62ADB00CDF458 /* Storyboard5.storyboard */; };
+		18E5D88825D62CFB00CDF458 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D88625D62CFB00CDF458 /* RegViewController.m */; };
+		18E5D88925D62CFB00CDF458 /* RegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88725D62CFB00CDF458 /* RegViewController.xib */; };
+		18E5D88B25D6A6E600CDF458 /* test1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88A25D6A6E600CDF458 /* test1.xib */; };
 		18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC90425CD3415007A7459 /* build_sdk.sh */; };
 		18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC91925CE3B75007A7459 /* Test1ViewController.m */; };
 		18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */; };
@@ -122,6 +140,32 @@
 		18BFC1552596DD9E00E67817 /* README.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = README.h; sourceTree = "<group>"; };
 		18BFC1572596DE1000E67817 /* test1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test1.storyboard; sourceTree = "<group>"; };
 		18BFC15F2597077C00E67817 /* files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = files; sourceTree = "<group>"; };
+		18E5D85F25D24BD700CDF458 /* GCDHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDHelper.h; sourceTree = "<group>"; };
+		18E5D86025D24BD700CDF458 /* GCDHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDHelper.m; sourceTree = "<group>"; };
+		18E5D86225D367A000CDF458 /* Storyboard4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard4.storyboard; sourceTree = "<group>"; };
+		18E5D86525D3779500CDF458 /* GCDDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoViewController.h; sourceTree = "<group>"; };
+		18E5D86625D3779500CDF458 /* GCDDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoViewController.m; sourceTree = "<group>"; };
+		18E5D86725D3779500CDF458 /* GCDDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDDemoViewController.xib; sourceTree = "<group>"; };
+		18E5D86A25D38C9300CDF458 /* SGUIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SGUIView+Toast.h"; sourceTree = "<group>"; };
+		18E5D86B25D38C9300CDF458 /* SGUIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SGUIView+Toast.m"; sourceTree = "<group>"; };
+		18E5D86D25D3A01800CDF458 /* UIDemo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDemo1ViewController.h; sourceTree = "<group>"; };
+		18E5D86E25D3A01800CDF458 /* UIDemo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDemo1ViewController.m; sourceTree = "<group>"; };
+		18E5D86F25D3A01800CDF458 /* UIDemo1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDemo1ViewController.xib; sourceTree = "<group>"; };
+		18E5D87225D3B44D00CDF458 /* UIDemo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDemo2ViewController.h; sourceTree = "<group>"; };
+		18E5D87325D3B44D00CDF458 /* UIDemo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDemo2ViewController.m; sourceTree = "<group>"; };
+		18E5D87425D3B44D00CDF458 /* UIDemo2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDemo2ViewController.xib; sourceTree = "<group>"; };
+		18E5D87725D3D86F00CDF458 /* MyTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTestViewController.h; sourceTree = "<group>"; };
+		18E5D87825D3D86F00CDF458 /* MyTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTestViewController.m; sourceTree = "<group>"; };
+		18E5D87925D3D86F00CDF458 /* MyTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTestViewController.xib; sourceTree = "<group>"; };
+		18E5D87C25D3E1C100CDF458 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		18E5D87E25D529E900CDF458 /* MyTestViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTestViewController1.h; sourceTree = "<group>"; };
+		18E5D87F25D529E900CDF458 /* MyTestViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTestViewController1.m; sourceTree = "<group>"; };
+		18E5D88025D529E900CDF458 /* MyTestViewController1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTestViewController1.xib; sourceTree = "<group>"; };
+		18E5D88325D62ADB00CDF458 /* Storyboard5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard5.storyboard; sourceTree = "<group>"; };
+		18E5D88525D62CFB00CDF458 /* RegViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
+		18E5D88625D62CFB00CDF458 /* RegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
+		18E5D88725D62CFB00CDF458 /* RegViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegViewController.xib; sourceTree = "<group>"; };
+		18E5D88A25D6A6E600CDF458 /* test1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = test1.xib; sourceTree = "<group>"; };
 		18ECC90425CD3415007A7459 /* build_sdk.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_sdk.sh; sourceTree = "<group>"; };
 		18ECC91725CD6B96007A7459 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18ECC91825CE3B75007A7459 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
@@ -194,6 +238,8 @@
 		18A6887D259766BA00FF3426 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				18E5D86A25D38C9300CDF458 /* SGUIView+Toast.h */,
+				18E5D86B25D38C9300CDF458 /* SGUIView+Toast.m */,
 				18A6887E259766DD00FF3426 /* FileUtil.h */,
 				18A6887F259766DD00FF3426 /* FileUtil.m */,
 				18A688932598756600FF3426 /* SafeMutableArray.h */,
@@ -204,6 +250,8 @@
 				18A865FC25AD769400FE0468 /* DateUtil.m */,
 				184E936625BFF333009FF8EB /* Queue.h */,
 				184E936725BFF333009FF8EB /* Queue.m */,
+				18E5D85F25D24BD700CDF458 /* GCDHelper.h */,
+				18E5D86025D24BD700CDF458 /* GCDHelper.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -254,16 +302,17 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				18E5D86425D3775900CDF458 /* test1 */,
+				18BFC15F2597077C00E67817 /* files */,
+				180892D025A48E53003F3CA7 /* test.bundle */,
 				18ECC91D25CE620D007A7459 /* imgs */,
 				1862DD1B25B6F22E00F80204 /* opengl */,
 				180892D825A57332003F3CA7 /* audio */,
 				18BFC1242595A28300E67817 /* controller */,
 				1808930825A9C6A7003F3CA7 /* cpp */,
-				18BFC15F2597077C00E67817 /* files */,
 				18BFC1562596DDF400E67817 /* layout */,
 				18A688A6259897D000FF3426 /* libs */,
 				18BFC12D25962CB400E67817 /* ocbase */,
-				180892D025A48E53003F3CA7 /* test.bundle */,
 				18A6887D259766BA00FF3426 /* util */,
 				18A688A12598931F00FF3426 /* wrapper */,
 				18BFC11525959E0800E67817 /* main.m */,
@@ -276,8 +325,11 @@
 				180892D225A56C71003F3CA7 /* Storyboard1.storyboard */,
 				180892D425A56EB9003F3CA7 /* Storyboard2.storyboard */,
 				180892D625A572A5003F3CA7 /* Storyboard3.storyboard */,
+				18E5D86225D367A000CDF458 /* Storyboard4.storyboard */,
 				18BFC10C25959E0700E67817 /* Main.storyboard */,
 				18BFC11425959E0800E67817 /* Info.plist */,
+				18E5D88325D62ADB00CDF458 /* Storyboard5.storyboard */,
+				18E5D88A25D6A6E600CDF458 /* test1.xib */,
 			);
 			path = "ios-app-demo1";
 			sourceTree = "<group>";
@@ -339,9 +391,35 @@
 			path = layout;
 			sourceTree = "<group>";
 		};
+		18E5D86425D3775900CDF458 /* test1 */ = {
+			isa = PBXGroup;
+			children = (
+				18E5D86525D3779500CDF458 /* GCDDemoViewController.h */,
+				18E5D86625D3779500CDF458 /* GCDDemoViewController.m */,
+				18E5D86725D3779500CDF458 /* GCDDemoViewController.xib */,
+				18E5D86D25D3A01800CDF458 /* UIDemo1ViewController.h */,
+				18E5D86E25D3A01800CDF458 /* UIDemo1ViewController.m */,
+				18E5D86F25D3A01800CDF458 /* UIDemo1ViewController.xib */,
+				18E5D87225D3B44D00CDF458 /* UIDemo2ViewController.h */,
+				18E5D87325D3B44D00CDF458 /* UIDemo2ViewController.m */,
+				18E5D87425D3B44D00CDF458 /* UIDemo2ViewController.xib */,
+				18E5D87725D3D86F00CDF458 /* MyTestViewController.h */,
+				18E5D87825D3D86F00CDF458 /* MyTestViewController.m */,
+				18E5D87925D3D86F00CDF458 /* MyTestViewController.xib */,
+				18E5D87E25D529E900CDF458 /* MyTestViewController1.h */,
+				18E5D87F25D529E900CDF458 /* MyTestViewController1.m */,
+				18E5D88025D529E900CDF458 /* MyTestViewController1.xib */,
+				18E5D88525D62CFB00CDF458 /* RegViewController.h */,
+				18E5D88625D62CFB00CDF458 /* RegViewController.m */,
+				18E5D88725D62CFB00CDF458 /* RegViewController.xib */,
+			);
+			path = test1;
+			sourceTree = "<group>";
+		};
 		18ECC91D25CE620D007A7459 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				18E5D87C25D3E1C100CDF458 /* test.png */,
 				18ECC91E25CE6225007A7459 /* back.png */,
 			);
 			path = imgs;
@@ -406,18 +484,27 @@
 			files = (
 				18BFC1602597077C00E67817 /* files in Resources */,
 				18ECC92425CE8279007A7459 /* Test2ViewController.xib in Resources */,
+				18E5D87B25D3D86F00CDF458 /* MyTestViewController.xib in Resources */,
+				18E5D88925D62CFB00CDF458 /* RegViewController.xib in Resources */,
+				18E5D87625D3B44D00CDF458 /* UIDemo2ViewController.xib in Resources */,
 				184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */,
 				18A6889D2598863500FF3426 /* test2.storyboard in Resources */,
 				180892D125A48E53003F3CA7 /* test.bundle in Resources */,
 				180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */,
+				18E5D88425D62ADB00CDF458 /* Storyboard5.storyboard in Resources */,
+				18E5D86925D3779500CDF458 /* GCDDemoViewController.xib in Resources */,
 				18ECC92925CE8A6D007A7459 /* Test3ViewController.xib in Resources */,
 				18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */,
 				18BFC1582596DE1000E67817 /* test1.storyboard in Resources */,
 				18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */,
+				18E5D87125D3A01800CDF458 /* UIDemo1ViewController.xib in Resources */,
+				18E5D86325D367A000CDF458 /* Storyboard4.storyboard in Resources */,
+				18E5D87D25D3E1C100CDF458 /* test.png in Resources */,
 				18BFC11325959E0800E67817 /* LaunchScreen.storyboard in Resources */,
 				18BFC11025959E0800E67817 /* Assets.xcassets in Resources */,
 				180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */,
 				180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */,
+				18E5D88225D529E900CDF458 /* MyTestViewController1.xib in Resources */,
 				18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */,
 				18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
@@ -427,6 +514,7 @@
 				1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */,
 				1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */,
 				18ECC92E25CE8F40007A7459 /* TestScrollViewViewController.xib in Resources */,
+				18E5D88B25D6A6E600CDF458 /* test1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,23 +529,31 @@
 				18A68886259843B300FF3426 /* POPAnimation.m in Sources */,
 				18ECC92825CE8A6D007A7459 /* Test3ViewController.m in Sources */,
 				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
+				18E5D86825D3779500CDF458 /* GCDDemoViewController.m in Sources */,
 				18BFC10525959E0700E67817 /* AppDelegate.m in Sources */,
+				18E5D87525D3B44D00CDF458 /* UIDemo2ViewController.m in Sources */,
 				1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */,
+				18E5D88125D529E900CDF458 /* MyTestViewController1.m in Sources */,
+				18E5D87A25D3D86F00CDF458 /* MyTestViewController.m in Sources */,
 				18A68883259842FB00FF3426 /* BaseViewController.m in Sources */,
 				18BFC11625959E0800E67817 /* main.m in Sources */,
 				18BFC12B2595A82700E67817 /* FileViewController.m in Sources */,
 				18BFC1272595A2A700E67817 /* ViewController.m in Sources */,
 				1808930E25A9CAB6003F3CA7 /* cpp_demo2.cpp in Sources */,
+				18E5D86C25D38C9300CDF458 /* SGUIView+Toast.m in Sources */,
 				18A68880259766DD00FF3426 /* FileUtil.m in Sources */,
 				18A688952598756600FF3426 /* SafeMutableArray.m in Sources */,
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
+				18E5D88825D62CFB00CDF458 /* RegViewController.m in Sources */,
 				18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */,
 				18ECC92D25CE8F40007A7459 /* TestScrollViewViewController.m in Sources */,
 				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
 				18ECC92325CE8279007A7459 /* Test2ViewController.m in Sources */,
 				18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */,
+				18E5D86125D24BD700CDF458 /* GCDHelper.m in Sources */,
 				184E936825BFF333009FF8EB /* Queue.m in Sources */,
+				18E5D87025D3A01800CDF458 /* UIDemo1ViewController.m in Sources */,
 				1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */,
 				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
@@ -537,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -589,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -4,7 +4,8 @@
 
 @property(nonatomic,strong)UIScrollView*scrollView;
 
-@property(nonatomic,strong)UIView*anchor_view/* 小技巧 */;
+/* 配合ScrollView 锚点View 小技巧 */
+@property(nonatomic,strong)UIView*anchor_view;
 
 @end
 
@@ -13,6 +14,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Test4ViewController#viewDidLoad ......");
+    
+    self.title = @"TestScrollViewViewController";
+    
     self.scrollView = [self.view viewWithTag:1];
     
     // 小技巧

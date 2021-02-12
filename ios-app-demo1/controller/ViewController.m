@@ -13,8 +13,12 @@
 #import "Test1ViewController.h"
 #import "Test2ViewController.h"
 #import "TestScrollViewViewController.h"
-
-
+#import "GCDDemoViewController.h"
+#import "UIDemo1ViewController.h"
+#import "UIDemo2ViewController.h"
+#import "MyTestViewController.h"
+#import "MyTestViewController1.h"
+#import "RegViewController.h"
 @interface ViewController ()
 
 @property (nonatomic,strong)UIButton*btn_file_op;
@@ -37,14 +41,16 @@
 
 @property (atomic,assign)int count;
 
+@property(nonatomic,strong)NSArray*arr;
+
 @end
-
-
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.arr = @[@"Hello",@"World"];
     
     self.btn_file_op = [self.view viewWithTag:1];
     [self.btn_file_op addTarget:self action:@selector(btn_file_op_clicked) forControlEvents:UIControlEventTouchUpInside];
@@ -72,17 +78,24 @@
     // [self test1];
     // [self test2];
     // [self test3];
-//    [self test4];
-//
-//    [self test5];
+    //     [self test4];
+    //
+    //     [self test5];
     [self test6];
     
-//    [self test7];
+    //    [self test7];
 }
 
 -(void)btn_test1_clicked{
-    int test_index =3;
-    if (test_index==1) {
+    arc4random_uniform(100);
+    int test_index = 8;
+    if (test_index==0) {
+        MyTestViewController1*ui_vc = [[MyTestViewController1 alloc]init];
+        UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }else if (test_index==1) {
         Test1ViewController*ui_vc = [[Test1ViewController alloc]init];
         UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
         vc.modalPresentationStyle = UIModalPresentationFullScreen;
@@ -100,10 +113,38 @@
         vc.modalPresentationStyle = UIModalPresentationFullScreen;
         
         [self presentViewController:vc animated:YES completion:nil];
+    }else if (test_index == 4){
+        GCDDemoViewController*ui_vc =[[GCDDemoViewController alloc]init];
+        UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }else if (test_index == 5){
+        UIDemo1ViewController*ui_vc =[[UIDemo1ViewController alloc]init];
+        UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }else if (test_index == 6){
+        UIDemo2ViewController*ui_vc =[[UIDemo2ViewController alloc]init];
+        UINavigationController *vc = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+    }else if (test_index == 7){
+        MyTestViewController*ui_vc = [[MyTestViewController alloc]init];
+        UINavigationController *n = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        n.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:n animated:YES completion:nil];
+        
+    }else if (test_index == 8){
+        RegViewController*ui_vc = [[RegViewController alloc]init];
+        UINavigationController *n = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+        n.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentViewController:n animated:YES completion:nil];
     }
-
-    
-    
 }
 
 /**
@@ -168,7 +209,7 @@
     dispatch_async(test_q, ^{
         while (n>0) {
             [self.conditionLock lock];
-                  NSLog(@"test6 2...... n: %d",n);
+            NSLog(@"test6 2...... n: %d",n);
             [self.conditionLock unlockWithCondition:1];
         }
     });

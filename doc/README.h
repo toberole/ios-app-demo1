@@ -18,8 +18,9 @@
  
  shift + cmd + 2 导出应用数据
  
- // 支持外部访问iphone 存储卡
+ // 支持外部访问iphone 存储卡，下载iFunBox
  Application supports iTunes file sharing YES
+ 
  
  手动安装xcode 与appstore安装有区别：
  sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer

@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestScrollViewViewController : UIViewController
+@interface UIDemo1ViewController : UIViewController
 
 @end
 

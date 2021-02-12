@@ -28,10 +28,13 @@ UINavigationController管理UINavigationBar
 UINavigationBar管理所有的UIViewController中的navigationItem.
 UINavigationBar是UINavigationController的属性，我们在设置了UINavigationBar的外观后，其将作用于全部的UIViewController。navigationItem是UIViewController的属性，它是配置这个UIViewController上面的UINavigationBar的内容的。UINavigationBar中有一个堆栈，这个堆栈是一个UINavigationItem堆栈，当把一个UIViewController push进栈的时候，它的navigationItem也会被push进UINavigationBar的堆栈。所以UINavigationBar的这个堆栈和这个UIViewController堆栈是一一对应的。
 
+注意：
+    在使用dismissViewControllerAnimated时，ViewController中的资源不释放，会导致当前ViewController的dealloc得不到调用。
 
+GCD三种队列：
+    主队列，全局队列，自定义队列
 
-
-
+OC中不能直接修改对象结构体属性的成员变量
 
 
 
