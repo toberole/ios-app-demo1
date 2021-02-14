@@ -64,6 +64,10 @@
 		18E5D88825D62CFB00CDF458 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D88625D62CFB00CDF458 /* RegViewController.m */; };
 		18E5D88925D62CFB00CDF458 /* RegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88725D62CFB00CDF458 /* RegViewController.xib */; };
 		18E5D88B25D6A6E600CDF458 /* test1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88A25D6A6E600CDF458 /* test1.xib */; };
+		18E5D89025D75FF300CDF458 /* MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D88E25D75FF300CDF458 /* MPViewController.m */; };
+		18E5D89125D75FF300CDF458 /* MPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88F25D75FF300CDF458 /* MPViewController.xib */; };
+		18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D89425D7649F00CDF458 /* Test2Demo1ViewController.m */; };
+		18E5D89725D7649F00CDF458 /* Test2Demo1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D89525D7649F00CDF458 /* Test2Demo1ViewController.xib */; };
 		18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC90425CD3415007A7459 /* build_sdk.sh */; };
 		18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC91925CE3B75007A7459 /* Test1ViewController.m */; };
 		18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */; };
@@ -166,6 +170,13 @@
 		18E5D88625D62CFB00CDF458 /* RegViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
 		18E5D88725D62CFB00CDF458 /* RegViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegViewController.xib; sourceTree = "<group>"; };
 		18E5D88A25D6A6E600CDF458 /* test1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = test1.xib; sourceTree = "<group>"; };
+		18E5D88C25D75D3700CDF458 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
+		18E5D88D25D75FF300CDF458 /* MPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPViewController.h; sourceTree = "<group>"; };
+		18E5D88E25D75FF300CDF458 /* MPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPViewController.m; sourceTree = "<group>"; };
+		18E5D88F25D75FF300CDF458 /* MPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MPViewController.xib; sourceTree = "<group>"; };
+		18E5D89325D7649F00CDF458 /* Test2Demo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2Demo1ViewController.h; sourceTree = "<group>"; };
+		18E5D89425D7649F00CDF458 /* Test2Demo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Demo1ViewController.m; sourceTree = "<group>"; };
+		18E5D89525D7649F00CDF458 /* Test2Demo1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test2Demo1ViewController.xib; sourceTree = "<group>"; };
 		18ECC90425CD3415007A7459 /* build_sdk.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_sdk.sh; sourceTree = "<group>"; };
 		18ECC91725CD6B96007A7459 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18ECC91825CE3B75007A7459 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
@@ -222,6 +233,7 @@
 				184E936425BFB974009FF8EB /* sdk_merge_tool.sh */,
 				18BFC1552596DD9E00E67817 /* README.h */,
 				18ECC91725CD6B96007A7459 /* README.md */,
+				18E5D88C25D75D3700CDF458 /* note.md */,
 			);
 			path = doc;
 			sourceTree = "<group>";
@@ -302,6 +314,7 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				18E5D89225D7648500CDF458 /* test2 */,
 				18E5D86425D3775900CDF458 /* test1 */,
 				18BFC15F2597077C00E67817 /* files */,
 				180892D025A48E53003F3CA7 /* test.bundle */,
@@ -412,8 +425,21 @@
 				18E5D88525D62CFB00CDF458 /* RegViewController.h */,
 				18E5D88625D62CFB00CDF458 /* RegViewController.m */,
 				18E5D88725D62CFB00CDF458 /* RegViewController.xib */,
+				18E5D88D25D75FF300CDF458 /* MPViewController.h */,
+				18E5D88E25D75FF300CDF458 /* MPViewController.m */,
+				18E5D88F25D75FF300CDF458 /* MPViewController.xib */,
 			);
 			path = test1;
+			sourceTree = "<group>";
+		};
+		18E5D89225D7648500CDF458 /* test2 */ = {
+			isa = PBXGroup;
+			children = (
+				18E5D89325D7649F00CDF458 /* Test2Demo1ViewController.h */,
+				18E5D89425D7649F00CDF458 /* Test2Demo1ViewController.m */,
+				18E5D89525D7649F00CDF458 /* Test2Demo1ViewController.xib */,
+			);
+			path = test2;
 			sourceTree = "<group>";
 		};
 		18ECC91D25CE620D007A7459 /* imgs */ = {
@@ -499,6 +525,7 @@
 				18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */,
 				18E5D87125D3A01800CDF458 /* UIDemo1ViewController.xib in Resources */,
 				18E5D86325D367A000CDF458 /* Storyboard4.storyboard in Resources */,
+				18E5D89125D75FF300CDF458 /* MPViewController.xib in Resources */,
 				18E5D87D25D3E1C100CDF458 /* test.png in Resources */,
 				18BFC11325959E0800E67817 /* LaunchScreen.storyboard in Resources */,
 				18BFC11025959E0800E67817 /* Assets.xcassets in Resources */,
@@ -511,6 +538,7 @@
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
 				18ECC91F25CE6225007A7459 /* back.png in Resources */,
 				1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */,
+				18E5D89725D7649F00CDF458 /* Test2Demo1ViewController.xib in Resources */,
 				1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */,
 				1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */,
 				18ECC92E25CE8F40007A7459 /* TestScrollViewViewController.xib in Resources */,
@@ -536,6 +564,7 @@
 				18E5D88125D529E900CDF458 /* MyTestViewController1.m in Sources */,
 				18E5D87A25D3D86F00CDF458 /* MyTestViewController.m in Sources */,
 				18A68883259842FB00FF3426 /* BaseViewController.m in Sources */,
+				18E5D89025D75FF300CDF458 /* MPViewController.m in Sources */,
 				18BFC11625959E0800E67817 /* main.m in Sources */,
 				18BFC12B2595A82700E67817 /* FileViewController.m in Sources */,
 				18BFC1272595A2A700E67817 /* ViewController.m in Sources */,
@@ -558,6 +587,7 @@
 				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
+				18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

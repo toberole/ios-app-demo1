@@ -19,6 +19,9 @@
 #import "MyTestViewController.h"
 #import "MyTestViewController1.h"
 #import "RegViewController.h"
+#import "Test2Demo1ViewController.h"
+
+
 @interface ViewController ()
 
 @property (nonatomic,strong)UIButton*btn_file_op;
@@ -74,6 +77,9 @@
     UIButton*test1 = [self.view viewWithTag:7];
     [test1 addTarget:self action:@selector(btn_test1_clicked) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton*test2 = [self.view viewWithTag:8];
+    [test2 addTarget:self action:@selector(btn_test2_clicked) forControlEvents:UIControlEventTouchUpInside];
+    
     // [self test];
     // [self test1];
     // [self test2];
@@ -84,6 +90,27 @@
     [self test6];
     
     //    [self test7];
+}
+
+-(void)btn_test2_clicked{
+    int testIndex = 0;
+    NSLog(@"btn_test2_clicked testIndex: %d",testIndex);
+    switch (testIndex) {
+        case 0:{
+            Test2Demo1ViewController *cv = [[Test2Demo1ViewController alloc]init];
+            UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
+            u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:u_cv animated:YES completion:nil];
+        }
+            break;
+        case 1:
+            
+            break;
+        default:
+            break;
+    }
+    
+    
 }
 
 -(void)btn_test1_clicked{
