@@ -68,6 +68,9 @@
 		18E5D89125D75FF300CDF458 /* MPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D88F25D75FF300CDF458 /* MPViewController.xib */; };
 		18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D89425D7649F00CDF458 /* Test2Demo1ViewController.m */; };
 		18E5D89725D7649F00CDF458 /* Test2Demo1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D89525D7649F00CDF458 /* Test2Demo1ViewController.xib */; };
+		18E5D89C25D8DD2D00CDF458 /* Test2Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D89A25D8DD2D00CDF458 /* Test2Demo2ViewController.m */; };
+		18E5D89D25D8DD2D00CDF458 /* Test2Demo2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D89B25D8DD2D00CDF458 /* Test2Demo2ViewController.xib */; };
+		18E5D8A025D94CBD00CDF458 /* Test2Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D89F25D94CBD00CDF458 /* Test2Demo3ViewController.m */; };
 		18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC90425CD3415007A7459 /* build_sdk.sh */; };
 		18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC91925CE3B75007A7459 /* Test1ViewController.m */; };
 		18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */; };
@@ -177,6 +180,11 @@
 		18E5D89325D7649F00CDF458 /* Test2Demo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2Demo1ViewController.h; sourceTree = "<group>"; };
 		18E5D89425D7649F00CDF458 /* Test2Demo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Demo1ViewController.m; sourceTree = "<group>"; };
 		18E5D89525D7649F00CDF458 /* Test2Demo1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test2Demo1ViewController.xib; sourceTree = "<group>"; };
+		18E5D89925D8DD2D00CDF458 /* Test2Demo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2Demo2ViewController.h; sourceTree = "<group>"; };
+		18E5D89A25D8DD2D00CDF458 /* Test2Demo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Demo2ViewController.m; sourceTree = "<group>"; };
+		18E5D89B25D8DD2D00CDF458 /* Test2Demo2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test2Demo2ViewController.xib; sourceTree = "<group>"; };
+		18E5D89E25D94CBD00CDF458 /* Test2Demo3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2Demo3ViewController.h; sourceTree = "<group>"; };
+		18E5D89F25D94CBD00CDF458 /* Test2Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Demo3ViewController.m; sourceTree = "<group>"; };
 		18ECC90425CD3415007A7459 /* build_sdk.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_sdk.sh; sourceTree = "<group>"; };
 		18ECC91725CD6B96007A7459 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18ECC91825CE3B75007A7459 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
@@ -314,10 +322,10 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
-				18E5D89225D7648500CDF458 /* test2 */,
-				18E5D86425D3775900CDF458 /* test1 */,
 				18BFC15F2597077C00E67817 /* files */,
 				180892D025A48E53003F3CA7 /* test.bundle */,
+				18E5D86425D3775900CDF458 /* test1 */,
+				18E5D89225D7648500CDF458 /* test2 */,
 				18ECC91D25CE620D007A7459 /* imgs */,
 				1862DD1B25B6F22E00F80204 /* opengl */,
 				180892D825A57332003F3CA7 /* audio */,
@@ -438,6 +446,11 @@
 				18E5D89325D7649F00CDF458 /* Test2Demo1ViewController.h */,
 				18E5D89425D7649F00CDF458 /* Test2Demo1ViewController.m */,
 				18E5D89525D7649F00CDF458 /* Test2Demo1ViewController.xib */,
+				18E5D89925D8DD2D00CDF458 /* Test2Demo2ViewController.h */,
+				18E5D89A25D8DD2D00CDF458 /* Test2Demo2ViewController.m */,
+				18E5D89B25D8DD2D00CDF458 /* Test2Demo2ViewController.xib */,
+				18E5D89E25D94CBD00CDF458 /* Test2Demo3ViewController.h */,
+				18E5D89F25D94CBD00CDF458 /* Test2Demo3ViewController.m */,
 			);
 			path = test2;
 			sourceTree = "<group>";
@@ -537,6 +550,7 @@
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
 				18ECC91F25CE6225007A7459 /* back.png in Resources */,
+				18E5D89D25D8DD2D00CDF458 /* Test2Demo2ViewController.xib in Resources */,
 				1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */,
 				18E5D89725D7649F00CDF458 /* Test2Demo1ViewController.xib in Resources */,
 				1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */,
@@ -574,6 +588,7 @@
 				18A688952598756600FF3426 /* SafeMutableArray.m in Sources */,
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
+				18E5D89C25D8DD2D00CDF458 /* Test2Demo2ViewController.m in Sources */,
 				18E5D88825D62CFB00CDF458 /* RegViewController.m in Sources */,
 				18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */,
 				18ECC92D25CE8F40007A7459 /* TestScrollViewViewController.m in Sources */,
@@ -587,6 +602,7 @@
 				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
+				18E5D8A025D94CBD00CDF458 /* Test2Demo3ViewController.m in Sources */,
 				18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

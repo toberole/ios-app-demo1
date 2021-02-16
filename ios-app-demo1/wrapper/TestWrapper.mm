@@ -7,8 +7,6 @@
 - (void)test1{
     int n = demo3_test1();
     NSLog(@"TestWrapper demo3_test1: %i",n);
-    
-    
 }
 
 - (void)test2{

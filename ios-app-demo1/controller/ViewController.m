@@ -20,7 +20,10 @@
 #import "MyTestViewController1.h"
 #import "RegViewController.h"
 #import "Test2Demo1ViewController.h"
+#import "Test2Demo3ViewController.h"
 
+
+// https://www.jianshu.com/p/f2598a8a816d
 
 @interface ViewController ()
 
@@ -93,7 +96,7 @@
 }
 
 -(void)btn_test2_clicked{
-    int testIndex = 0;
+    int testIndex = 1;
     NSLog(@"btn_test2_clicked testIndex: %d",testIndex);
     switch (testIndex) {
         case 0:{
@@ -104,7 +107,22 @@
         }
             break;
         case 1:
+        {
+            Test2Demo3ViewController*v = [[Test2Demo3ViewController alloc]init];
+            CGRect viewBounds = [[UIScreen mainScreen] applicationFrame];//不包含状态栏的Rect
+            UINavigationController*nv = [[UINavigationController alloc]initWithRootViewController:v];
+            nv.modalPresentationStyle = UIModalPresentationFullScreen;
             
+            /**
+             UINavigationBar是UINavigationController的View的上面的那部分。UINavigationController负责创建UINavigationBar。
+             */
+//            UINavigationItem*item = [nv.navigationBar.items objectAtIndex:0];
+//            item.title = @"123456";
+            
+            
+            
+            [self presentViewController:nv animated:YES completion:nil];
+        }
             break;
         default:
             break;
