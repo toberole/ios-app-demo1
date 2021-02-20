@@ -44,7 +44,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Test2Demo3ViewController#viewDidLoad ......");
-//    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 //    self.navigationController.navigationBar.topItem.title = @"The Title";
 //
     // self.title = @"a The Title a";
@@ -88,6 +88,15 @@
 
 - (void)viewDidUnload{
     NSLog(@"Test2Demo3ViewController#viewDidUnload ......");
+}
+
+- (void)didReceiveMemoryWarning{
+    NSLog(@"Test2Demo3ViewController#didReceiveMemoryWarning ......");
+}
+
+- (void)dealloc
+{
+   NSLog(@"Test2Demo3ViewController#dealloc ......");
 }
 
 @end

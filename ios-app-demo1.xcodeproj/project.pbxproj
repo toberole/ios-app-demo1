@@ -13,6 +13,9 @@
 		180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180892D625A572A5003F3CA7 /* Storyboard3.storyboard */; };
 		1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930925A9C75D003F3CA7 /* cpp_demo1.cpp */; };
 		1808930E25A9CAB6003F3CA7 /* cpp_demo2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */; };
+		182755C225E0B9CB006AD438 /* MultiThreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182755C025E0B9CB006AD438 /* MultiThreadingViewController.m */; };
+		182755C325E0B9CB006AD438 /* MultiThreadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182755C125E0B9CB006AD438 /* MultiThreadingViewController.xib */; };
+		182755C625E10AEE006AD438 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182755C525E10AEE006AD438 /* Singleton.m */; };
 		184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */ = {isa = PBXBuildFile; fileRef = 184E936425BFB974009FF8EB /* sdk_merge_tool.sh */; };
 		184E936825BFF333009FF8EB /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 184E936725BFF333009FF8EB /* Queue.m */; };
 		1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */; };
@@ -71,6 +74,12 @@
 		18E5D89C25D8DD2D00CDF458 /* Test2Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D89A25D8DD2D00CDF458 /* Test2Demo2ViewController.m */; };
 		18E5D89D25D8DD2D00CDF458 /* Test2Demo2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D89B25D8DD2D00CDF458 /* Test2Demo2ViewController.xib */; };
 		18E5D8A025D94CBD00CDF458 /* Test2Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D89F25D94CBD00CDF458 /* Test2Demo3ViewController.m */; };
+		18E5D8A325DB6F8600CDF458 /* NBTest2Demo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D8A225DB6F8600CDF458 /* NBTest2Demo4ViewController.m */; };
+		18E5D8A725DB753100CDF458 /* NBTransformDemo5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D8A525DB753100CDF458 /* NBTransformDemo5ViewController.m */; };
+		18E5D8A825DB753100CDF458 /* NBTransformDemo5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D8A625DB753100CDF458 /* NBTransformDemo5ViewController.xib */; };
+		18E5D8AC25DCA5E100CDF458 /* NBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D8AB25DCA5E100CDF458 /* NBPerson.m */; };
+		18E5D8B025DD2C8100CDF458 /* NBStatusBarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D8AE25DD2C8100CDF458 /* NBStatusBarDemoViewController.m */; };
+		18E5D8B125DD2C8100CDF458 /* NBStatusBarDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D8AF25DD2C8100CDF458 /* NBStatusBarDemoViewController.xib */; };
 		18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC90425CD3415007A7459 /* build_sdk.sh */; };
 		18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC91925CE3B75007A7459 /* Test1ViewController.m */; };
 		18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */; };
@@ -94,6 +103,11 @@
 		1808930A25A9C75D003F3CA7 /* cpp_demo1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo1.hpp; sourceTree = "<group>"; };
 		1808930C25A9CAB6003F3CA7 /* cpp_demo2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_demo2.cpp; sourceTree = "<group>"; };
 		1808930D25A9CAB6003F3CA7 /* cpp_demo2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpp_demo2.hpp; sourceTree = "<group>"; };
+		182755BF25E0B9CB006AD438 /* MultiThreadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiThreadingViewController.h; sourceTree = "<group>"; };
+		182755C025E0B9CB006AD438 /* MultiThreadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiThreadingViewController.m; sourceTree = "<group>"; };
+		182755C125E0B9CB006AD438 /* MultiThreadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiThreadingViewController.xib; sourceTree = "<group>"; };
+		182755C425E10AEE006AD438 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		182755C525E10AEE006AD438 /* Singleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		184E936425BFB974009FF8EB /* sdk_merge_tool.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = sdk_merge_tool.sh; sourceTree = "<group>"; };
 		184E936625BFF333009FF8EB /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		184E936725BFF333009FF8EB /* Queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
@@ -185,6 +199,17 @@
 		18E5D89B25D8DD2D00CDF458 /* Test2Demo2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test2Demo2ViewController.xib; sourceTree = "<group>"; };
 		18E5D89E25D94CBD00CDF458 /* Test2Demo3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2Demo3ViewController.h; sourceTree = "<group>"; };
 		18E5D89F25D94CBD00CDF458 /* Test2Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Demo3ViewController.m; sourceTree = "<group>"; };
+		18E5D8A125DB6F8600CDF458 /* NBTest2Demo4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBTest2Demo4ViewController.h; sourceTree = "<group>"; };
+		18E5D8A225DB6F8600CDF458 /* NBTest2Demo4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBTest2Demo4ViewController.m; sourceTree = "<group>"; };
+		18E5D8A425DB753100CDF458 /* NBTransformDemo5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBTransformDemo5ViewController.h; sourceTree = "<group>"; };
+		18E5D8A525DB753100CDF458 /* NBTransformDemo5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBTransformDemo5ViewController.m; sourceTree = "<group>"; };
+		18E5D8A625DB753100CDF458 /* NBTransformDemo5ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBTransformDemo5ViewController.xib; sourceTree = "<group>"; };
+		18E5D8A925DBA5A200CDF458 /* UIView_Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIView_Note.h; sourceTree = "<group>"; };
+		18E5D8AA25DCA5E100CDF458 /* NBPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBPerson.h; sourceTree = "<group>"; };
+		18E5D8AB25DCA5E100CDF458 /* NBPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBPerson.m; sourceTree = "<group>"; };
+		18E5D8AD25DD2C8100CDF458 /* NBStatusBarDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBStatusBarDemoViewController.h; sourceTree = "<group>"; };
+		18E5D8AE25DD2C8100CDF458 /* NBStatusBarDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBStatusBarDemoViewController.m; sourceTree = "<group>"; };
+		18E5D8AF25DD2C8100CDF458 /* NBStatusBarDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBStatusBarDemoViewController.xib; sourceTree = "<group>"; };
 		18ECC90425CD3415007A7459 /* build_sdk.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_sdk.sh; sourceTree = "<group>"; };
 		18ECC91725CD6B96007A7459 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18ECC91825CE3B75007A7459 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
@@ -237,6 +262,7 @@
 		184E936325BFB947009FF8EB /* doc */ = {
 			isa = PBXGroup;
 			children = (
+				18E5D8A925DBA5A200CDF458 /* UIView_Note.h */,
 				18ECC90425CD3415007A7459 /* build_sdk.sh */,
 				184E936425BFB974009FF8EB /* sdk_merge_tool.sh */,
 				18BFC1552596DD9E00E67817 /* README.h */,
@@ -436,6 +462,11 @@
 				18E5D88D25D75FF300CDF458 /* MPViewController.h */,
 				18E5D88E25D75FF300CDF458 /* MPViewController.m */,
 				18E5D88F25D75FF300CDF458 /* MPViewController.xib */,
+				182755BF25E0B9CB006AD438 /* MultiThreadingViewController.h */,
+				182755C025E0B9CB006AD438 /* MultiThreadingViewController.m */,
+				182755C125E0B9CB006AD438 /* MultiThreadingViewController.xib */,
+				182755C425E10AEE006AD438 /* Singleton.h */,
+				182755C525E10AEE006AD438 /* Singleton.m */,
 			);
 			path = test1;
 			sourceTree = "<group>";
@@ -451,6 +482,16 @@
 				18E5D89B25D8DD2D00CDF458 /* Test2Demo2ViewController.xib */,
 				18E5D89E25D94CBD00CDF458 /* Test2Demo3ViewController.h */,
 				18E5D89F25D94CBD00CDF458 /* Test2Demo3ViewController.m */,
+				18E5D8A125DB6F8600CDF458 /* NBTest2Demo4ViewController.h */,
+				18E5D8A225DB6F8600CDF458 /* NBTest2Demo4ViewController.m */,
+				18E5D8A425DB753100CDF458 /* NBTransformDemo5ViewController.h */,
+				18E5D8A525DB753100CDF458 /* NBTransformDemo5ViewController.m */,
+				18E5D8A625DB753100CDF458 /* NBTransformDemo5ViewController.xib */,
+				18E5D8AA25DCA5E100CDF458 /* NBPerson.h */,
+				18E5D8AB25DCA5E100CDF458 /* NBPerson.m */,
+				18E5D8AD25DD2C8100CDF458 /* NBStatusBarDemoViewController.h */,
+				18E5D8AE25DD2C8100CDF458 /* NBStatusBarDemoViewController.m */,
+				18E5D8AF25DD2C8100CDF458 /* NBStatusBarDemoViewController.xib */,
 			);
 			path = test2;
 			sourceTree = "<group>";
@@ -490,6 +531,7 @@
 		18BFC0F825959E0700E67817 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NB;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
@@ -522,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BFC1602597077C00E67817 /* files in Resources */,
+				182755C325E0B9CB006AD438 /* MultiThreadingViewController.xib in Resources */,
 				18ECC92425CE8279007A7459 /* Test2ViewController.xib in Resources */,
 				18E5D87B25D3D86F00CDF458 /* MyTestViewController.xib in Resources */,
 				18E5D88925D62CFB00CDF458 /* RegViewController.xib in Resources */,
@@ -532,6 +575,7 @@
 				180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */,
 				18E5D88425D62ADB00CDF458 /* Storyboard5.storyboard in Resources */,
 				18E5D86925D3779500CDF458 /* GCDDemoViewController.xib in Resources */,
+				18E5D8B125DD2C8100CDF458 /* NBStatusBarDemoViewController.xib in Resources */,
 				18ECC92925CE8A6D007A7459 /* Test3ViewController.xib in Resources */,
 				18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */,
 				18BFC1582596DE1000E67817 /* test1.storyboard in Resources */,
@@ -548,6 +592,7 @@
 				18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */,
 				18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
+				18E5D8A825DB753100CDF458 /* NBTransformDemo5ViewController.xib in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
 				18ECC91F25CE6225007A7459 /* back.png in Resources */,
 				18E5D89D25D8DD2D00CDF458 /* Test2Demo2ViewController.xib in Resources */,
@@ -570,6 +615,7 @@
 				18A865FA25AD62A900FE0468 /* AudioQueuePlay.m in Sources */,
 				18A68886259843B300FF3426 /* POPAnimation.m in Sources */,
 				18ECC92825CE8A6D007A7459 /* Test3ViewController.m in Sources */,
+				18E5D8A325DB6F8600CDF458 /* NBTest2Demo4ViewController.m in Sources */,
 				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
 				18E5D86825D3779500CDF458 /* GCDDemoViewController.m in Sources */,
 				18BFC10525959E0700E67817 /* AppDelegate.m in Sources */,
@@ -586,6 +632,7 @@
 				18E5D86C25D38C9300CDF458 /* SGUIView+Toast.m in Sources */,
 				18A68880259766DD00FF3426 /* FileUtil.m in Sources */,
 				18A688952598756600FF3426 /* SafeMutableArray.m in Sources */,
+				18E5D8A725DB753100CDF458 /* NBTransformDemo5ViewController.m in Sources */,
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
 				18E5D89C25D8DD2D00CDF458 /* Test2Demo2ViewController.m in Sources */,
@@ -593,17 +640,21 @@
 				18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */,
 				18ECC92D25CE8F40007A7459 /* TestScrollViewViewController.m in Sources */,
 				18BFC13D25963B8700E67817 /* NavigationControllerDemo.m in Sources */,
+				18E5D8AC25DCA5E100CDF458 /* NBPerson.m in Sources */,
 				18ECC92325CE8279007A7459 /* Test2ViewController.m in Sources */,
 				18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */,
 				18E5D86125D24BD700CDF458 /* GCDHelper.m in Sources */,
 				184E936825BFF333009FF8EB /* Queue.m in Sources */,
 				18E5D87025D3A01800CDF458 /* UIDemo1ViewController.m in Sources */,
+				18E5D8B025DD2C8100CDF458 /* NBStatusBarDemoViewController.m in Sources */,
 				1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */,
 				18A865FD25AD769400FE0468 /* DateUtil.m in Sources */,
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
 				18E5D8A025D94CBD00CDF458 /* Test2Demo3ViewController.m in Sources */,
 				18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */,
+				182755C625E10AEE006AD438 /* Singleton.m in Sources */,
+				182755C225E0B9CB006AD438 /* MultiThreadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

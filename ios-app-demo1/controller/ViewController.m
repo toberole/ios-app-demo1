@@ -21,7 +21,9 @@
 #import "RegViewController.h"
 #import "Test2Demo1ViewController.h"
 #import "Test2Demo3ViewController.h"
-
+#import "NBTransformDemo5ViewController.h"
+#import "NBStatusBarDemoViewController.h"
+#import "MultiThreadingViewController.h"
 
 // https://www.jianshu.com/p/f2598a8a816d
 
@@ -96,9 +98,38 @@
 }
 
 -(void)btn_test2_clicked{
-    int testIndex = 1;
+    int testIndex = 4;
     NSLog(@"btn_test2_clicked testIndex: %d",testIndex);
     switch (testIndex) {
+        case 4:
+        {
+            //
+            MultiThreadingViewController
+            *cv = [[MultiThreadingViewController alloc]init];
+            UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
+            u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:u_cv animated:YES completion:nil];
+        }break;
+        case 3:
+        {
+            NBStatusBarDemoViewController
+            *cv = [[NBStatusBarDemoViewController alloc]init];
+            UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
+            u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:u_cv animated:YES completion:nil];
+            
+            
+        }
+            break;
+        case 2:
+        {
+            NBTransformDemo5ViewController
+            *cv = [[NBTransformDemo5ViewController alloc]init];
+            UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
+            u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:u_cv animated:YES completion:nil];
+        }
+            break;
         case 0:{
             Test2Demo1ViewController *cv = [[Test2Demo1ViewController alloc]init];
             UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
@@ -114,10 +145,11 @@
             nv.modalPresentationStyle = UIModalPresentationFullScreen;
             
             /**
-             UINavigationBar是UINavigationController的View的上面的那部分。UINavigationController负责创建UINavigationBar。
+             UINavigationBar是UINavigationController的View的上面的那部分。
+             UINavigationController负责创建UINavigationBar。
              */
-//            UINavigationItem*item = [nv.navigationBar.items objectAtIndex:0];
-//            item.title = @"123456";
+            //            UINavigationItem*item = [nv.navigationBar.items objectAtIndex:0];
+            //            item.title = @"123456";
             
             
             
