@@ -2,6 +2,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// NSLog printf 重定向 ？
+
 #define NB_TAG "NBLOGMSG"
 
 #define NB_separator "*************************************"
