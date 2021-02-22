@@ -60,6 +60,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 抛出异常
+    // [NSException raise:@"Invalid foo value" format:@"foo of %d is invalid", 123];
+    
     self.arr = @[@"Hello",@"World"];
     
     self.btn_file_op = [self.view viewWithTag:1];

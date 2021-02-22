@@ -16,6 +16,8 @@
 
 @interface NBOCBaseViewController ()
 
+@property dispatch_source_t timer;
+
 @end
 
 @implementation NBOCBaseViewController
@@ -35,6 +37,9 @@
     
     btn = [self.view viewWithTag:3];
     [btn addTarget:self action:@selector(btn_clicked3) forControlEvents:UIControlEventTouchUpInside];
+    
+    btn = [self.view viewWithTag:4];
+    [btn addTarget:self action:@selector(btn_clicked4) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -131,6 +136,29 @@
     
     [NBLogUtil resetNSLog];
     NSLog(@"222222222222");
+}
+
+// 每间隔固定时间执行一次任务
+-(void)btn_clicked4{
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+ 
+    self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+ 
+    // 开始时间
+    dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, 3.0 * NSEC_PER_SEC);
+ 
+    // 间隔时间
+    uint64_t interval = 2.0 * NSEC_PER_SEC;
+ 
+    dispatch_source_set_timer(self.timer, start, interval, 0);
+ 
+    // 设置回调
+    dispatch_source_set_event_handler(self.timer, ^{
+        NSLog(@"---- self.timer ---");
+    });
+ 
+    // 启动timer
+    dispatch_resume(self.timer);
 }
 
 @end

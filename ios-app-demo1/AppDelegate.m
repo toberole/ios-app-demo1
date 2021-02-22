@@ -8,6 +8,10 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // 设置全局异常处理器具
+    // NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
+    
     // 用制定的stroyboard构建ViewController
     ViewController *c = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateInitialViewController];
     
@@ -30,8 +34,6 @@
 
 
 #pragma mark - UISceneSession lifecycle
-
-
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options  API_AVAILABLE(ios(13.0)){
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.
@@ -45,5 +47,21 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
+void UncaughtExceptionHandler(NSException* exception)
+{
+    NSString * name = [exception name ];
+    NSString * reason = [exception reason ];
+    NSArray * symbols = [exception callStackSymbols ]; // 异常发生时的调用栈
+
+    NSMutableString * strSymbols = [ [ NSMutableString alloc ] init ]; //将调用栈拼成输出日志的字符串
+
+    for ( NSString* item in symbols )
+    {
+        [ strSymbols appendString: item ];
+        [ strSymbols appendString: @"\r\n" ];
+    }
+    
+    NSLog(@"error name: %@,reason: %@,strSymbols: %@",name,reason,[NSString stringWithString:strSymbols]);
+}
 
 @end

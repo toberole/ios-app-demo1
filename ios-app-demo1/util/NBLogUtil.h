@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void)resetNSLog;
 
+// - (dispatch_source_t)_startCapturingWritingToFD:(int)fd
+- (dispatch_source_t)_startCapturingWritingToFD:(int)fd;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -30,25 +30,25 @@ static BOOL nb_debug = YES;
 + (void)redirectNSLogToDucumentFile{
     //创建文件路径
     NSString *documentpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-
+    
     NSDate *date = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *dateStr = [dateFormatter stringFromDate:date];
     NSString *fileName = [NSString stringWithFormat:@"%@.log",dateStr];
-
+    
     NSString *logFilePath = [documentpath stringByAppendingPathComponent:fileName];
-
+    
     // 删除已经存在文件
     NSLog(@"logFilePath---> %@",logFilePath);
-
+    
     NSFileManager *fileManager = [NSFileManager defaultManager];
-
+    
     [fileManager removeItemAtPath:logFilePath error:nil];
-
+    
     NBLogUtil_fd = dup(STDERR_FILENO);
     NSLog(@"NBLogUtil_fd---> %d",NBLogUtil_fd);
-
+    
     // 使用标准C的freopen将stderr重定向到我们的文件
     freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stderr);
 }
@@ -62,6 +62,45 @@ static BOOL nb_debug = YES;
     dup2(NBLogUtil_fd, STDERR_FILENO);
     
     NSLog(@"resetNSLog ......");
+}
+
+// NSTimer受runloop的影响，由于runloop需要处理很多任务，导致NSTimer的精度降低
+// dispatch_source_t 定时任务 精度很高，系统自动触发，系统级别的源
+- (dispatch_source_t)_startCapturingWritingToFD:(int)fd  {
+    int fildes[2];
+    pipe(fildes);  // [0] is read end of pipe while [1] is write end
+    dup2(fildes[1], fd);  // Duplicate write end of pipe "onto" fd (this closes fd)
+    close(fildes[1]);  // Close original write end of pipe
+    fd = fildes[0];  // We can now monitor the read end of the pipe
+    char* buffer = malloc(1024);
+    NSMutableData* data = [[NSMutableData alloc] init];
+    fcntl(fd, F_SETFL, O_NONBLOCK);
+    dispatch_source_t source = dispatch_source_create(
+                                                      DISPATCH_SOURCE_TYPE_READ, fd, 0, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0));
+    dispatch_source_set_cancel_handler(source, ^{
+        free(buffer);
+    });
+    dispatch_source_set_event_handler(source, ^{
+        @autoreleasepool {
+            
+            while (1) {
+                ssize_t size = read(fd, buffer, 1024);
+                if (size <= 0) {
+                    break;
+                }
+                [data appendBytes:buffer length:size];
+                if (size < 1024) {
+                    break;
+                }
+            }
+            NSString *aString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            //printf("aString = %s",[aString UTF8String]);
+            //NSLog(@"aString = %@",aString);
+            // Do something
+        }
+    });
+    dispatch_resume(source);
+    return source;
 }
 
 @end
