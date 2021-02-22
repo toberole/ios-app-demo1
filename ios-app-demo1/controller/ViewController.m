@@ -24,6 +24,8 @@
 #import "NBTransformDemo5ViewController.h"
 #import "NBStatusBarDemoViewController.h"
 #import "MultiThreadingViewController.h"
+#import "NBOCBaseViewController.h"
+
 
 // https://www.jianshu.com/p/f2598a8a816d
 
@@ -85,6 +87,9 @@
     UIButton*test2 = [self.view viewWithTag:8];
     [test2 addTarget:self action:@selector(btn_test2_clicked) forControlEvents:UIControlEventTouchUpInside];
     
+    UIDevice*device = [UIDevice currentDevice];
+    NSLog(@"currentDevice model: %@",[device model]);
+    
     // [self test];
     // [self test1];
     // [self test2];
@@ -92,15 +97,26 @@
     //     [self test4];
     //
     //     [self test5];
-    [self test6];
+    // [self test6];
     
     //    [self test7];
 }
 
 -(void)btn_test2_clicked{
-    int testIndex = 4;
+    int testIndex = 5;
+    
     NSLog(@"btn_test2_clicked testIndex: %d",testIndex);
     switch (testIndex) {
+        case 5:
+        {
+            //
+            NBOCBaseViewController
+            *cv = [[NBOCBaseViewController alloc]init];
+            UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
+            u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:u_cv animated:YES completion:nil];
+        }break;
+            
         case 4:
         {
             //

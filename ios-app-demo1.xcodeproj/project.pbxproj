@@ -16,14 +16,17 @@
 		182755C225E0B9CB006AD438 /* MultiThreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182755C025E0B9CB006AD438 /* MultiThreadingViewController.m */; };
 		182755C325E0B9CB006AD438 /* MultiThreadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182755C125E0B9CB006AD438 /* MultiThreadingViewController.xib */; };
 		182755C625E10AEE006AD438 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182755C525E10AEE006AD438 /* Singleton.m */; };
+		182755CA25E12054006AD438 /* NBStu.m in Sources */ = {isa = PBXBuildFile; fileRef = 182755C925E12054006AD438 /* NBStu.m */; };
 		184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */ = {isa = PBXBuildFile; fileRef = 184E936425BFB974009FF8EB /* sdk_merge_tool.sh */; };
 		184E936825BFF333009FF8EB /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 184E936725BFF333009FF8EB /* Queue.m */; };
 		1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */; };
 		1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */; };
 		1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862DD2125B6F48100F80204 /* OpenGLController.m */; };
 		1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD2225B6F48100F80204 /* OpenGLController.xib */; };
+		187BADEF25E3C0CE00C743F5 /* DateUtil_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BADEE25E3C0CE00C743F5 /* DateUtil_1.m */; };
 		18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */; };
 		18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */; };
+		18A1803625E348FA00F604DB /* NBLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1803525E348FA00F604DB /* NBLogUtil.m */; };
 		18A68880259766DD00FF3426 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6887F259766DD00FF3426 /* FileUtil.m */; };
 		18A68883259842FB00FF3426 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68882259842FB00FF3426 /* BaseViewController.m */; };
 		18A68886259843B300FF3426 /* POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A68885259843B300FF3426 /* POPAnimation.m */; };
@@ -80,6 +83,8 @@
 		18E5D8AC25DCA5E100CDF458 /* NBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D8AB25DCA5E100CDF458 /* NBPerson.m */; };
 		18E5D8B025DD2C8100CDF458 /* NBStatusBarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D8AE25DD2C8100CDF458 /* NBStatusBarDemoViewController.m */; };
 		18E5D8B125DD2C8100CDF458 /* NBStatusBarDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D8AF25DD2C8100CDF458 /* NBStatusBarDemoViewController.xib */; };
+		18EC6A5F25E33F9800621927 /* NBOCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC6A5D25E33F9800621927 /* NBOCBaseViewController.m */; };
+		18EC6A6025E33F9800621927 /* NBOCBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EC6A5E25E33F9800621927 /* NBOCBaseViewController.xib */; };
 		18ECC90525CD3415007A7459 /* build_sdk.sh in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC90425CD3415007A7459 /* build_sdk.sh */; };
 		18ECC91B25CE3B75007A7459 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC91925CE3B75007A7459 /* Test1ViewController.m */; };
 		18ECC91C25CE3B75007A7459 /* Test1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECC91A25CE3B75007A7459 /* Test1ViewController.xib */; };
@@ -108,6 +113,8 @@
 		182755C125E0B9CB006AD438 /* MultiThreadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiThreadingViewController.xib; sourceTree = "<group>"; };
 		182755C425E10AEE006AD438 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		182755C525E10AEE006AD438 /* Singleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		182755C825E12054006AD438 /* NBStu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBStu.h; sourceTree = "<group>"; };
+		182755C925E12054006AD438 /* NBStu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBStu.m; sourceTree = "<group>"; };
 		184E936425BFB974009FF8EB /* sdk_merge_tool.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = sdk_merge_tool.sh; sourceTree = "<group>"; };
 		184E936625BFF333009FF8EB /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		184E936725BFF333009FF8EB /* Queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
@@ -116,9 +123,13 @@
 		1862DD2025B6F48100F80204 /* OpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLController.h; sourceTree = "<group>"; };
 		1862DD2125B6F48100F80204 /* OpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLController.m; sourceTree = "<group>"; };
 		1862DD2225B6F48100F80204 /* OpenGLController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenGLController.xib; sourceTree = "<group>"; };
+		187BADED25E3C0CE00C743F5 /* DateUtil_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateUtil_1.h; sourceTree = "<group>"; };
+		187BADEE25E3C0CE00C743F5 /* DateUtil_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtil_1.m; sourceTree = "<group>"; };
 		18995A3F25CA4E61007B89D9 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
 		18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
 		18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
+		18A1803425E348FA00F604DB /* NBLogUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBLogUtil.h; sourceTree = "<group>"; };
+		18A1803525E348FA00F604DB /* NBLogUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBLogUtil.m; sourceTree = "<group>"; };
 		18A6887E259766DD00FF3426 /* FileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		18A6887F259766DD00FF3426 /* FileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		18A68881259842FB00FF3426 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -210,6 +221,9 @@
 		18E5D8AD25DD2C8100CDF458 /* NBStatusBarDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBStatusBarDemoViewController.h; sourceTree = "<group>"; };
 		18E5D8AE25DD2C8100CDF458 /* NBStatusBarDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBStatusBarDemoViewController.m; sourceTree = "<group>"; };
 		18E5D8AF25DD2C8100CDF458 /* NBStatusBarDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBStatusBarDemoViewController.xib; sourceTree = "<group>"; };
+		18EC6A5C25E33F9800621927 /* NBOCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBOCBaseViewController.h; sourceTree = "<group>"; };
+		18EC6A5D25E33F9800621927 /* NBOCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBOCBaseViewController.m; sourceTree = "<group>"; };
+		18EC6A5E25E33F9800621927 /* NBOCBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBOCBaseViewController.xib; sourceTree = "<group>"; };
 		18ECC90425CD3415007A7459 /* build_sdk.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_sdk.sh; sourceTree = "<group>"; };
 		18ECC91725CD6B96007A7459 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18ECC91825CE3B75007A7459 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
@@ -298,6 +312,10 @@
 				184E936725BFF333009FF8EB /* Queue.m */,
 				18E5D85F25D24BD700CDF458 /* GCDHelper.h */,
 				18E5D86025D24BD700CDF458 /* GCDHelper.m */,
+				18A1803425E348FA00F604DB /* NBLogUtil.h */,
+				18A1803525E348FA00F604DB /* NBLogUtil.m */,
+				187BADED25E3C0CE00C743F5 /* DateUtil_1.h */,
+				187BADEE25E3C0CE00C743F5 /* DateUtil_1.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -423,6 +441,10 @@
 		18BFC12D25962CB400E67817 /* ocbase */ = {
 			isa = PBXGroup;
 			children = (
+				18E5D8AA25DCA5E100CDF458 /* NBPerson.h */,
+				18E5D8AB25DCA5E100CDF458 /* NBPerson.m */,
+				182755C825E12054006AD438 /* NBStu.h */,
+				182755C925E12054006AD438 /* NBStu.m */,
 				18BFC12E25962CD600E67817 /* Student.h */,
 				18BFC12F25962CD600E67817 /* Student.m */,
 			);
@@ -487,11 +509,12 @@
 				18E5D8A425DB753100CDF458 /* NBTransformDemo5ViewController.h */,
 				18E5D8A525DB753100CDF458 /* NBTransformDemo5ViewController.m */,
 				18E5D8A625DB753100CDF458 /* NBTransformDemo5ViewController.xib */,
-				18E5D8AA25DCA5E100CDF458 /* NBPerson.h */,
-				18E5D8AB25DCA5E100CDF458 /* NBPerson.m */,
 				18E5D8AD25DD2C8100CDF458 /* NBStatusBarDemoViewController.h */,
 				18E5D8AE25DD2C8100CDF458 /* NBStatusBarDemoViewController.m */,
 				18E5D8AF25DD2C8100CDF458 /* NBStatusBarDemoViewController.xib */,
+				18EC6A5C25E33F9800621927 /* NBOCBaseViewController.h */,
+				18EC6A5D25E33F9800621927 /* NBOCBaseViewController.m */,
+				18EC6A5E25E33F9800621927 /* NBOCBaseViewController.xib */,
 			);
 			path = test2;
 			sourceTree = "<group>";
@@ -602,6 +625,7 @@
 				1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */,
 				18ECC92E25CE8F40007A7459 /* TestScrollViewViewController.xib in Resources */,
 				18E5D88B25D6A6E600CDF458 /* test1.xib in Resources */,
+				18EC6A6025E33F9800621927 /* NBOCBaseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,12 +652,14 @@
 				18BFC11625959E0800E67817 /* main.m in Sources */,
 				18BFC12B2595A82700E67817 /* FileViewController.m in Sources */,
 				18BFC1272595A2A700E67817 /* ViewController.m in Sources */,
+				187BADEF25E3C0CE00C743F5 /* DateUtil_1.m in Sources */,
 				1808930E25A9CAB6003F3CA7 /* cpp_demo2.cpp in Sources */,
 				18E5D86C25D38C9300CDF458 /* SGUIView+Toast.m in Sources */,
 				18A68880259766DD00FF3426 /* FileUtil.m in Sources */,
 				18A688952598756600FF3426 /* SafeMutableArray.m in Sources */,
 				18E5D8A725DB753100CDF458 /* NBTransformDemo5ViewController.m in Sources */,
 				18A688A5259893A000FF3426 /* TestWrapper.mm in Sources */,
+				182755CA25E12054006AD438 /* NBStu.m in Sources */,
 				18BFC10825959E0700E67817 /* SceneDelegate.m in Sources */,
 				18E5D89C25D8DD2D00CDF458 /* Test2Demo2ViewController.m in Sources */,
 				18E5D88825D62CFB00CDF458 /* RegViewController.m in Sources */,
@@ -645,6 +671,7 @@
 				18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */,
 				18E5D86125D24BD700CDF458 /* GCDHelper.m in Sources */,
 				184E936825BFF333009FF8EB /* Queue.m in Sources */,
+				18EC6A5F25E33F9800621927 /* NBOCBaseViewController.m in Sources */,
 				18E5D87025D3A01800CDF458 /* UIDemo1ViewController.m in Sources */,
 				18E5D8B025DD2C8100CDF458 /* NBStatusBarDemoViewController.m in Sources */,
 				1808930B25A9C75D003F3CA7 /* cpp_demo1.cpp in Sources */,
@@ -652,6 +679,7 @@
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
 				18E5D8A025D94CBD00CDF458 /* Test2Demo3ViewController.m in Sources */,
+				18A1803625E348FA00F604DB /* NBLogUtil.m in Sources */,
 				18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */,
 				182755C625E10AEE006AD438 /* Singleton.m in Sources */,
 				182755C225E0B9CB006AD438 /* MultiThreadingViewController.m in Sources */,
