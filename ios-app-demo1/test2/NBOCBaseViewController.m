@@ -1,6 +1,7 @@
 #import "NBOCBaseViewController.h"
 #import "NBStu.h"
 #import "NBLogUtil.h"
+#import "NBMYUIViewViewController.h"
 
 /**
  NSDate 相关：
@@ -40,6 +41,9 @@
     
     btn = [self.view viewWithTag:4];
     [btn addTarget:self action:@selector(btn_clicked4) forControlEvents:UIControlEventTouchUpInside];
+    
+    btn = [self.view viewWithTag:5];
+    [btn addTarget:self action:@selector(btn_clicked5) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -159,6 +163,13 @@
  
     // 启动timer
     dispatch_resume(self.timer);
+}
+
+-(void)btn_clicked5{
+    NBMYUIViewViewController *cv = [[NBMYUIViewViewController alloc]init];
+    UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
+    u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:u_cv animated:YES completion:nil];
 }
 
 @end

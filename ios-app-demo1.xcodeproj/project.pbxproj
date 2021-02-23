@@ -24,6 +24,12 @@
 		1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862DD2125B6F48100F80204 /* OpenGLController.m */; };
 		1862DD2425B6F48100F80204 /* OpenGLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD2225B6F48100F80204 /* OpenGLController.xib */; };
 		187BADEF25E3C0CE00C743F5 /* DateUtil_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BADEE25E3C0CE00C743F5 /* DateUtil_1.m */; };
+		187BADF325E3D6E100C743F5 /* 自定义view.txt in Resources */ = {isa = PBXBuildFile; fileRef = 187BADF225E3D6E100C743F5 /* 自定义view.txt */; };
+		187BADF725E4A49500C743F5 /* NBView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BADF625E4A49500C743F5 /* NBView1.m */; };
+		187BADFB25E4AA3200C743F5 /* NBMYUIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BADFA25E4AA3200C743F5 /* NBMYUIViewViewController.m */; };
+		187BADFF25E4BA7000C743F5 /* NBView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BADFE25E4BA7000C743F5 /* NBView2.m */; };
+		187BAE0225E4BABA00C743F5 /* NBView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187BAE0125E4BABA00C743F5 /* NBView2.xib */; };
+		187BAE0625E4BFE500C743F5 /* NBView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BAE0525E4BFE500C743F5 /* NBView3.m */; };
 		18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */; };
 		18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */; };
 		18A1803625E348FA00F604DB /* NBLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1803525E348FA00F604DB /* NBLogUtil.m */; };
@@ -125,6 +131,16 @@
 		1862DD2225B6F48100F80204 /* OpenGLController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenGLController.xib; sourceTree = "<group>"; };
 		187BADED25E3C0CE00C743F5 /* DateUtil_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateUtil_1.h; sourceTree = "<group>"; };
 		187BADEE25E3C0CE00C743F5 /* DateUtil_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtil_1.m; sourceTree = "<group>"; };
+		187BADF225E3D6E100C743F5 /* 自定义view.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "自定义view.txt"; sourceTree = "<group>"; };
+		187BADF525E4A49500C743F5 /* NBView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBView1.h; sourceTree = "<group>"; };
+		187BADF625E4A49500C743F5 /* NBView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBView1.m; sourceTree = "<group>"; };
+		187BADF925E4AA3200C743F5 /* NBMYUIViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBMYUIViewViewController.h; sourceTree = "<group>"; };
+		187BADFA25E4AA3200C743F5 /* NBMYUIViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBMYUIViewViewController.m; sourceTree = "<group>"; };
+		187BADFD25E4BA7000C743F5 /* NBView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBView2.h; sourceTree = "<group>"; };
+		187BADFE25E4BA7000C743F5 /* NBView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBView2.m; sourceTree = "<group>"; };
+		187BAE0125E4BABA00C743F5 /* NBView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBView2.xib; sourceTree = "<group>"; };
+		187BAE0425E4BFE500C743F5 /* NBView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBView3.h; sourceTree = "<group>"; };
+		187BAE0525E4BFE500C743F5 /* NBView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBView3.m; sourceTree = "<group>"; };
 		18995A3F25CA4E61007B89D9 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
 		18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
 		18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
@@ -295,6 +311,21 @@
 			path = opengl;
 			sourceTree = "<group>";
 		};
+		187BADF125E3D6B700C743F5 /* myview */ = {
+			isa = PBXGroup;
+			children = (
+				187BADF225E3D6E100C743F5 /* 自定义view.txt */,
+				187BADF525E4A49500C743F5 /* NBView1.h */,
+				187BADF625E4A49500C743F5 /* NBView1.m */,
+				187BADFD25E4BA7000C743F5 /* NBView2.h */,
+				187BADFE25E4BA7000C743F5 /* NBView2.m */,
+				187BAE0125E4BABA00C743F5 /* NBView2.xib */,
+				187BAE0425E4BFE500C743F5 /* NBView3.h */,
+				187BAE0525E4BFE500C743F5 /* NBView3.m */,
+			);
+			path = myview;
+			sourceTree = "<group>";
+		};
 		18A6887D259766BA00FF3426 /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +397,7 @@
 		18BFC10225959E0700E67817 /* ios-app-demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				187BADF125E3D6B700C743F5 /* myview */,
 				18BFC15F2597077C00E67817 /* files */,
 				180892D025A48E53003F3CA7 /* test.bundle */,
 				18E5D86425D3775900CDF458 /* test1 */,
@@ -515,6 +547,8 @@
 				18EC6A5C25E33F9800621927 /* NBOCBaseViewController.h */,
 				18EC6A5D25E33F9800621927 /* NBOCBaseViewController.m */,
 				18EC6A5E25E33F9800621927 /* NBOCBaseViewController.xib */,
+				187BADF925E4AA3200C743F5 /* NBMYUIViewViewController.h */,
+				187BADFA25E4AA3200C743F5 /* NBMYUIViewViewController.m */,
 			);
 			path = test2;
 			sourceTree = "<group>";
@@ -593,6 +627,7 @@
 				18E5D88925D62CFB00CDF458 /* RegViewController.xib in Resources */,
 				18E5D87625D3B44D00CDF458 /* UIDemo2ViewController.xib in Resources */,
 				184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */,
+				187BAE0225E4BABA00C743F5 /* NBView2.xib in Resources */,
 				18A6889D2598863500FF3426 /* test2.storyboard in Resources */,
 				180892D125A48E53003F3CA7 /* test.bundle in Resources */,
 				180892D525A56EB9003F3CA7 /* Storyboard2.storyboard in Resources */,
@@ -616,6 +651,7 @@
 				18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */,
 				18BFC12C2595A82700E67817 /* FileViewController.xib in Resources */,
 				18E5D8A825DB753100CDF458 /* NBTransformDemo5ViewController.xib in Resources */,
+				187BADF325E3D6E100C743F5 /* 自定义view.txt in Resources */,
 				18BFC10E25959E0700E67817 /* Main.storyboard in Resources */,
 				18ECC91F25CE6225007A7459 /* back.png in Resources */,
 				18E5D89D25D8DD2D00CDF458 /* Test2Demo2ViewController.xib in Resources */,
@@ -636,13 +672,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187BADF725E4A49500C743F5 /* NBView1.m in Sources */,
 				18A865FA25AD62A900FE0468 /* AudioQueuePlay.m in Sources */,
 				18A68886259843B300FF3426 /* POPAnimation.m in Sources */,
 				18ECC92825CE8A6D007A7459 /* Test3ViewController.m in Sources */,
 				18E5D8A325DB6F8600CDF458 /* NBTest2Demo4ViewController.m in Sources */,
 				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
 				18E5D86825D3779500CDF458 /* GCDDemoViewController.m in Sources */,
+				187BADFB25E4AA3200C743F5 /* NBMYUIViewViewController.m in Sources */,
 				18BFC10525959E0700E67817 /* AppDelegate.m in Sources */,
+				187BADFF25E4BA7000C743F5 /* NBView2.m in Sources */,
 				18E5D87525D3B44D00CDF458 /* UIDemo2ViewController.m in Sources */,
 				1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */,
 				18E5D88125D529E900CDF458 /* MyTestViewController1.m in Sources */,
@@ -669,6 +708,7 @@
 				18E5D8AC25DCA5E100CDF458 /* NBPerson.m in Sources */,
 				18ECC92325CE8279007A7459 /* Test2ViewController.m in Sources */,
 				18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */,
+				187BAE0625E4BFE500C743F5 /* NBView3.m in Sources */,
 				18E5D86125D24BD700CDF458 /* GCDHelper.m in Sources */,
 				184E936825BFF333009FF8EB /* Queue.m in Sources */,
 				18EC6A5F25E33F9800621927 /* NBOCBaseViewController.m in Sources */,
