@@ -30,6 +30,7 @@
 		187BADFF25E4BA7000C743F5 /* NBView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BADFE25E4BA7000C743F5 /* NBView2.m */; };
 		187BAE0225E4BABA00C743F5 /* NBView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187BAE0125E4BABA00C743F5 /* NBView2.xib */; };
 		187BAE0625E4BFE500C743F5 /* NBView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BAE0525E4BFE500C743F5 /* NBView3.m */; };
+		187BAE2C25E62E1900C743F5 /* MyWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BAE2B25E62E1900C743F5 /* MyWeakProxy.m */; };
 		18995A4225CA4E61007B89D9 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */; };
 		18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */; };
 		18A1803625E348FA00F604DB /* NBLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1803525E348FA00F604DB /* NBLogUtil.m */; };
@@ -141,6 +142,8 @@
 		187BAE0125E4BABA00C743F5 /* NBView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBView2.xib; sourceTree = "<group>"; };
 		187BAE0425E4BFE500C743F5 /* NBView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBView3.h; sourceTree = "<group>"; };
 		187BAE0525E4BFE500C743F5 /* NBView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBView3.m; sourceTree = "<group>"; };
+		187BAE2A25E62E1900C743F5 /* MyWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWeakProxy.h; sourceTree = "<group>"; };
+		187BAE2B25E62E1900C743F5 /* MyWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWeakProxy.m; sourceTree = "<group>"; };
 		18995A3F25CA4E61007B89D9 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
 		18995A4025CA4E61007B89D9 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
 		18995A4125CA4E61007B89D9 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
@@ -479,6 +482,8 @@
 				182755C925E12054006AD438 /* NBStu.m */,
 				18BFC12E25962CD600E67817 /* Student.h */,
 				18BFC12F25962CD600E67817 /* Student.m */,
+				187BAE2A25E62E1900C743F5 /* MyWeakProxy.h */,
+				187BAE2B25E62E1900C743F5 /* MyWeakProxy.m */,
 			);
 			path = ocbase;
 			sourceTree = "<group>";
@@ -720,6 +725,7 @@
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
 				18E5D8A025D94CBD00CDF458 /* Test2Demo3ViewController.m in Sources */,
 				18A1803625E348FA00F604DB /* NBLogUtil.m in Sources */,
+				187BAE2C25E62E1900C743F5 /* MyWeakProxy.m in Sources */,
 				18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */,
 				182755C625E10AEE006AD438 /* Singleton.m in Sources */,
 				182755C225E0B9CB006AD438 /* MultiThreadingViewController.m in Sources */,

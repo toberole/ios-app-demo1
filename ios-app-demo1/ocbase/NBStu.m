@@ -24,7 +24,7 @@
 }
 
 - (void)sysHello{
-    NSLog(@"sysHello: %@",self.name);
+    NSLog(@"sysHello name: %@,test_name: %@",self.name,self.test_name);
 }
 
 @end

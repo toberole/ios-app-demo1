@@ -2,6 +2,7 @@
 #import "NBStu.h"
 #import "NBLogUtil.h"
 #import "NBMYUIViewViewController.h"
+#import "MyWeakProxy.h"
 
 /**
  NSDate 相关：
@@ -44,6 +45,9 @@
     
     btn = [self.view viewWithTag:5];
     [btn addTarget:self action:@selector(btn_clicked5) forControlEvents:UIControlEventTouchUpInside];
+    
+    btn = [self.view viewWithTag:6];
+    [btn addTarget:self action:@selector(btn_clicked6) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -170,6 +174,39 @@
     UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
     u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:u_cv animated:YES completion:nil];
+}
+
+-(void)btn_clicked6{
+    NSLog(@"btn_clicked6 ......");
+    
+    NBStu*stu = [[NBStu alloc]init];
+    stu.test_name = @"abc......";
+    NBStu*stu1 = (NBStu*)[MyWeakProxy proxyWithTarget:stu];
+    [stu1 sysHello];
+}
+
+-(void)base_test1{
+    CFRunLoopRef cfRunLoopRef;
+    NSRunLoop *runLoop;
+    // 创建NSRunLoop
+    CFRunLoopGetMain();
+    CFRunLoopGetCurrent();
+    
+    // iOS 中，关于网络请求的接口自下至上有如下几层:
+    /**
+     CFSocket
+     CFNetwork       ->ASIHttpRequest
+     NSURLConnection ->AFNetworking
+     NSURLSession    ->AFNetworking2, Alamofire
+     
+     */
+    
+    [NSTimer scheduledTimerWithTimeInterval:5 repeats:YES block:^(NSTimer * _Nonnull timer) {
+            
+    }];
+    
+    NSProxy*proxy = nil;
+    
 }
 
 @end
