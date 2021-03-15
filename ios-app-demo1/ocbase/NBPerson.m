@@ -11,4 +11,14 @@
     return self;
 }
 
+//+ (BOOL)resolveInstanceMethod:(SEL)sel{
+//    return YES;
+//}
+//
+//+ (BOOL)resolveClassMethod:(SEL)sel{
+//    return YES;
+//}
+
+
+
 @end

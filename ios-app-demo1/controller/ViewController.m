@@ -25,7 +25,9 @@
 #import "NBStatusBarDemoViewController.h"
 #import "MultiThreadingViewController.h"
 #import "NBOCBaseViewController.h"
-
+#import "NBUIviewCALayerViewController.h"
+#import "NBPerson.h"
+#import "ObjC_Msg_Send.h"
 
 // https://www.jianshu.com/p/f2598a8a816d
 
@@ -57,11 +59,90 @@
 
 @implementation ViewController
 
+-(void)testbase{
+    // 抛出异常
+    // [NSException raise:@"Invalid foo value" format:@"foo of %d is invalid", 123];
+    
+    NBPerson*p = [[NBPerson alloc]init];
+    
+    @synchronized (nil/* 不会加锁 */ ) {
+        NSLog(@"@synchronized (nil) ......");
+    }
+    
+    NSString*test_syn = nil;
+    __weak typeof(test_syn) wtest_syn = test_syn;
+    __strong typeof(wtest_syn) stest_syn = wtest_syn;
+    if (!stest_syn) {
+        NSLog(@"stest_syn == nil");
+    }
+    
+    // 语法糖
+    NSNumber *n1 = @"1";
+    NSNumber*n2 = @1;
+    NSArray*arr1 = @[@1,@2];
+    NSDictionary*dict1 = @{
+        @"name":@"xiaohong"
+    };
+    // 访问 但不可写
+    NSNumber*n3 = arr1[0];
+    NSString*str1 = dict1[@"name"];
+    
+    // 可变数组和可变字典用字面量初始化需要进行multableCopy
+    NSMutableArray*arr2 = [@[@"1",@"2"] mutableCopy];
+    NSMutableDictionary*dict2 = [@{@"name":@"hello"}mutableCopy];
+    
+    ///////////////////////////////////////////////////////
+    /**
+     在ARC下，系统只会自动管理Foundation对象的释放，而不支持对Core Foundation对象的管理
+     */
+    /**
+     ①__bridge关键词最常用，它的含义是不改变对象的管理权所有者，本来由ARC管理的Foundation对象，转换成CoreFoundation对象后依然由ARC管理；本来由开发者手动管理的Core Foundation对象转换成Foundation对象后继续由开发者手动管理。
+     
+     解决方案：使用__bridge、__bridge_transfer和__bridge_retained来处理对象的管理权限的转移。
+     */
+    // ARC管理的Foundation对象
+    NSString*s1 = @"ARC 管理的Foundation对象";
+    // 转换后依然由ARC管理
+    CFStringRef cs1 = (__bridge CFStringRef)s1;
+    // 用户手动管理的Core Foundation对象
+    CFStringRef s2 = CFStringCreateWithCString(NULL, "用户手动管理的Core Foundation对象", kCFStringEncodingUTF8);
+    // 转换后 即使在ARC环境下 任然需要用户手动管理
+    NSString*s2_1 = (__bridge NSString*)s2;
+    
+    /**
+     ②__bridge_transfer用在将Core Foundation对象转换成Foundation对象时，用于进行内存管理权的移交，即本来需由开发者手动管理释放的Core Foundation对象在转换成Foundation对象后，交由ARC来管理对象的释放，开发者不用再关心对象的释放问题
+     */
+    // 开发者手动管理的Core Foundation对象
+    CFStringRef cs3 = CFStringCreateWithCString(NULL, "开发者手动管理的Core Foundation对象", kCFStringEncodingUTF8);
+    // 转换后 由ARC管理对象 不用关系内存泄漏问题
+    NSString*s3 = (__bridge_transfer NSString*)cs3;// 第一种转换写法
+    NSString*s3_1 = CFBridgingRelease(cs3);// 第二种转换写法
+    /**
+     __bridge_retained用在将Foundation对象转换成CoreFoundation对象时，进行ARC内存管理权的剥夺，即本来由ARC管理的Foundation对象在转换成Core Foundation对象后，ARC不再继续管理该对象，需要开发者自己进行手动释放该对象，否则会发生内存泄漏。
+     */
+    // ARC管理的Foundation对象
+    NSString*s4 = @"ARC管理的Foundation对象";
+    // 转换后ARC不再继续管理，需要用户手动管理
+    CFStringRef*s4_1 = (__bridge_retained CFStringRef)s4;// 第一种写法
+    CFStringRef s4_2 = (CFStringRef)CFBridgingRetain(s4);// 第二种写法
+    ///////////////////////////////////////////////////////
+    
+}
+-(void)testbase1{
+    ObjC_Msg_Send*o = [[ObjC_Msg_Send alloc]init];
+    [o instanceMethod];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 抛出异常
-    // [NSException raise:@"Invalid foo value" format:@"foo of %d is invalid", 123];
+    // [self testbase];
+    [self testbase1];
+    
+    NSArray*arr = nil;
+    
+    NSString *test_str = @"今天天气怎么样hello";
+    NSLog(@"str: %@,len: %ld",test_str,[test_str lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
     
     self.arr = @[@"Hello",@"World"];
     
@@ -97,19 +178,28 @@
     // [self test1];
     // [self test2];
     // [self test3];
-    //     [self test4];
+    // [self test4];
     //
-    //     [self test5];
+    // [self test5];
     // [self test6];
     
-    //    [self test7];
+    // [self test7];
 }
 
 -(void)btn_test2_clicked{
-    int testIndex = 5;
+    int testIndex = 6;
     
     NSLog(@"btn_test2_clicked testIndex: %d",testIndex);
     switch (testIndex) {
+        case 6:
+        {
+            //
+            NBUIviewCALayerViewController
+            *cv = [[NBUIviewCALayerViewController alloc]init];
+            UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:cv];
+            u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:u_cv animated:YES completion:nil];
+        }break;
         case 5:
         {
             //
@@ -119,7 +209,7 @@
             u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:u_cv animated:YES completion:nil];
         }break;
-            
+        
         case 4:
         {
             //

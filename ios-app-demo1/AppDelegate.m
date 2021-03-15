@@ -32,6 +32,9 @@
     
 }
 
+- (void)applicationWillResignActive:(UIApplication *)application{
+    
+}
 
 #pragma mark - UISceneSession lifecycle
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options  API_AVAILABLE(ios(13.0)){
@@ -63,5 +66,19 @@ void UncaughtExceptionHandler(NSException* exception)
     
     NSLog(@"error name: %@,reason: %@,strSymbols: %@",name,reason,[NSString stringWithString:strSymbols]);
 }
+
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    NSLog(@"applicationDidBecomeActive ......");
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application{
+    NSLog(@"applicationDidEnterBackground ......");
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application{
+    NSLog(@"applicationWillEnterForeground ......");
+}
+
+
 
 @end

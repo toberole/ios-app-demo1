@@ -50,6 +50,9 @@
         
         [invocation invokeWithTarget:self.target];
         
+        // 获取返回值
+        // invocation getReturnValue:<#(nonnull void *)#>
+        
         NSLog(@"After calling \"%@\".", selectorName);
     }
 }

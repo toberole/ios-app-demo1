@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void)enableDebug:(BOOL)b;
 
++(void)redirectNSLogToDocumentFolder;
+
 +(void)redirectNSLogToDucumentFile;
 
 +(void)resetNSLog;

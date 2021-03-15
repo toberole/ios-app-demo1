@@ -31,6 +31,13 @@
  // 命令打包 i386 x86_64
  xcodebuild -target tts-lib -configuration Debug -sdk iphonesimulator -arch i386 -arch x86_64
  
+ 查看架构信息
+ lipo -info XXX.a
+ 移除架构
+ lipo XXX.a -remove arm64 -output XXX.a
+ 分离架构
+ lipo XXX.a -thin arm64 -output XXX.a
+ 
  */
 
 #endif /* README_h */

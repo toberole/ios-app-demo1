@@ -1,4 +1,4 @@
-注意View的tag不能为0
+注意View的tag不能为0，因为UIView的tag默认值就是0
 
 UINavigationController是一个容器视图控制器，其内部可以展示多个UIViewController，UINavigationController的视图由三部分组成，最上面的UINavigationBar，最下面的默认隐藏的toolbar，以及中间部分UIViewController中的View
 

@@ -209,4 +209,22 @@
     
 }
 
+-(void)base_test2{
+    // 实现指定线程数目的线程池
+    dispatch_queue_t workConcurrentQueue = dispatch_queue_create("example.code", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t serialQueue = dispatch_queue_create("example.code.task",DISPATCH_QUEUE_SERIAL);
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(3);
+    for (NSInteger i = 0; i < 10; i++) {
+    dispatch_async(serialQueue, ^{
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    dispatch_async(workConcurrentQueue, ^{
+        NSLog(@"thread-info:%@开始执行任务%d",[NSThread currentThread],(int)i);
+        sleep(1);
+        NSLog(@"thread-info:%@结束执行任务%d",[NSThread currentThread],(int)i);
+        dispatch_semaphore_signal(semaphore);});
+    });
+    }
+    NSLog(@"主线程...!");
+}
+
 @end
