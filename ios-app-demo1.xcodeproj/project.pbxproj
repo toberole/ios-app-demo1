@@ -20,6 +20,9 @@
 		184E936525BFB974009FF8EB /* sdk_merge_tool.sh in Resources */ = {isa = PBXBuildFile; fileRef = 184E936425BFB974009FF8EB /* sdk_merge_tool.sh */; };
 		184E936825BFF333009FF8EB /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 184E936725BFF333009FF8EB /* Queue.m */; };
 		185C198325F7464700FA7D9A /* ObjC_Msg_Send.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C198225F7464600FA7D9A /* ObjC_Msg_Send.m */; };
+		185C198A25FF253900FA7D9A /* NBCPPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C198825FF253900FA7D9A /* NBCPPViewController.m */; };
+		185C198B25FF253900FA7D9A /* NBCPPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185C198925FF253900FA7D9A /* NBCPPViewController.xib */; };
+		185C198F25FF267600FA7D9A /* NBCppBaseDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185C198D25FF267600FA7D9A /* NBCppBaseDemo.cpp */; };
 		1862DD1D25B6F27600F80204 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */; };
 		1862DD1F25B6F28F00F80204 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */; };
 		1862DD2325B6F48100F80204 /* OpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1862DD2125B6F48100F80204 /* OpenGLController.m */; };
@@ -132,6 +135,11 @@
 		185C198025F5E6A800FA7D9A /* ios-question.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ios-question.md"; sourceTree = "<group>"; };
 		185C198125F7464600FA7D9A /* ObjC_Msg_Send.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjC_Msg_Send.h; sourceTree = "<group>"; };
 		185C198225F7464600FA7D9A /* ObjC_Msg_Send.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjC_Msg_Send.m; sourceTree = "<group>"; };
+		185C198725FF253900FA7D9A /* NBCPPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBCPPViewController.h; sourceTree = "<group>"; };
+		185C198825FF253900FA7D9A /* NBCPPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBCPPViewController.m; sourceTree = "<group>"; };
+		185C198925FF253900FA7D9A /* NBCPPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBCPPViewController.xib; sourceTree = "<group>"; };
+		185C198D25FF267600FA7D9A /* NBCppBaseDemo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NBCppBaseDemo.cpp; sourceTree = "<group>"; };
+		185C198E25FF267600FA7D9A /* NBCppBaseDemo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NBCppBaseDemo.hpp; sourceTree = "<group>"; };
 		1862DD1C25B6F27500F80204 /* SimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
 		1862DD1E25B6F28F00F80204 /* SimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		1862DD2025B6F48100F80204 /* OpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLController.h; sourceTree = "<group>"; };
@@ -481,6 +489,11 @@
 				18ECC92A25CE8F40007A7459 /* TestScrollViewViewController.h */,
 				18ECC92B25CE8F40007A7459 /* TestScrollViewViewController.m */,
 				18ECC92C25CE8F40007A7459 /* TestScrollViewViewController.xib */,
+				185C198725FF253900FA7D9A /* NBCPPViewController.h */,
+				185C198825FF253900FA7D9A /* NBCPPViewController.m */,
+				185C198925FF253900FA7D9A /* NBCPPViewController.xib */,
+				185C198D25FF267600FA7D9A /* NBCppBaseDemo.cpp */,
+				185C198E25FF267600FA7D9A /* NBCppBaseDemo.hpp */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -668,6 +681,7 @@
 				18BFC11025959E0800E67817 /* Assets.xcassets in Resources */,
 				180892D325A56C71003F3CA7 /* Storyboard1.storyboard in Resources */,
 				180892D725A572A5003F3CA7 /* Storyboard3.storyboard in Resources */,
+				185C198B25FF253900FA7D9A /* NBCPPViewController.xib in Resources */,
 				18E5D88225D529E900CDF458 /* MyTestViewController1.xib in Resources */,
 				18BFC13E25963B8700E67817 /* NavigationControllerDemo.xib in Resources */,
 				18995A4325CA4E61007B89D9 /* LifeCycleViewController.xib in Resources */,
@@ -700,6 +714,7 @@
 				18A68886259843B300FF3426 /* POPAnimation.m in Sources */,
 				18ECC92825CE8A6D007A7459 /* Test3ViewController.m in Sources */,
 				18E5D8A325DB6F8600CDF458 /* NBTest2Demo4ViewController.m in Sources */,
+				185C198F25FF267600FA7D9A /* NBCppBaseDemo.cpp in Sources */,
 				18BFC1392596392A00E67817 /* NetViewController.m in Sources */,
 				18E5D86825D3779500CDF458 /* GCDDemoViewController.m in Sources */,
 				187BADFB25E4AA3200C743F5 /* NBMYUIViewViewController.m in Sources */,
@@ -744,6 +759,7 @@
 				18A68898259875E700FF3426 /* SafeMutableDictionary.m in Sources */,
 				18BFC13025962CD600E67817 /* Student.m in Sources */,
 				18E5D8A025D94CBD00CDF458 /* Test2Demo3ViewController.m in Sources */,
+				185C198A25FF253900FA7D9A /* NBCPPViewController.m in Sources */,
 				18A1803625E348FA00F604DB /* NBLogUtil.m in Sources */,
 				187BAE2C25E62E1900C743F5 /* MyWeakProxy.m in Sources */,
 				18E5D89625D7649F00CDF458 /* Test2Demo1ViewController.m in Sources */,

@@ -33,8 +33,13 @@
  
  查看架构信息
  lipo -info XXX.a
+ 
+ 整合成Fat文件
+ lipo -create xxxx xxxx -output xxxx
+
  移除架构
  lipo XXX.a -remove arm64 -output XXX.a
+ 
  分离架构
  lipo XXX.a -thin arm64 -output XXX.a
  

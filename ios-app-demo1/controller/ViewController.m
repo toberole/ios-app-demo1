@@ -28,6 +28,7 @@
 #import "NBUIviewCALayerViewController.h"
 #import "NBPerson.h"
 #import "ObjC_Msg_Send.h"
+#import "NBCPPViewController.h"
 
 // https://www.jianshu.com/p/f2598a8a816d
 
@@ -137,7 +138,7 @@
     [super viewDidLoad];
     
     // [self testbase];
-    [self testbase1];
+    // [self testbase1];
     
     NSArray*arr = nil;
     
@@ -171,6 +172,9 @@
     UIButton*test2 = [self.view viewWithTag:8];
     [test2 addTarget:self action:@selector(btn_test2_clicked) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton*cppBtn = [self.view viewWithTag:9];
+    [cppBtn addTarget:self action:@selector(btn_cpp_clicked) forControlEvents:UIControlEventTouchUpInside];
+    
     UIDevice*device = [UIDevice currentDevice];
     NSLog(@"currentDevice model: %@",[device model]);
     
@@ -184,6 +188,14 @@
     // [self test6];
     
     // [self test7];
+}
+
+-(void)btn_cpp_clicked{
+    NBCPPViewController*v=[[NBCPPViewController alloc]init];
+    UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:v];
+    u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:u_cv animated:YES completion:nil];
+
 }
 
 -(void)btn_test2_clicked{

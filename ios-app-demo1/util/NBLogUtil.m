@@ -5,6 +5,10 @@
 // STDERR_FILENO   2    /* standard error file descriptor */
 /**
  NSLog ----> STDERR_FILENO
+ 
+ printf对应标准输出stdout
+ NSLog对应标准错误stderr
+ 
  */
 /**
  int  dup(int fd);
