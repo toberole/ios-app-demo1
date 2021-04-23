@@ -79,6 +79,8 @@ void UncaughtExceptionHandler(NSException* exception)
     NSLog(@"applicationWillEnterForeground ......");
 }
 
-
+- (void)applicationWillTerminate:(UIApplication *)application{
+    
+}
 
 @end

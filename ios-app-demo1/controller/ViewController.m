@@ -1,9 +1,10 @@
+#include <dlfcn.h>
+
 #import "ViewController.h"
 #import "FileViewController.h"
 #import "NetViewController.h"
 #import "NavigationControllerDemo.h"
 #import "TestWrapper.h"
-#include <dlfcn.h>
 #include "cpp_demo1.hpp"
 #import "AudioQueuePlay.h"
 #import "FileUtil.h"
@@ -29,6 +30,8 @@
 #import "NBPerson.h"
 #import "ObjC_Msg_Send.h"
 #import "NBCPPViewController.h"
+#import "ContainerViewController.h"
+#import "NBNSUrlSessionControllerViewController.h"
 
 // https://www.jianshu.com/p/f2598a8a816d
 
@@ -191,10 +194,17 @@
 }
 
 -(void)btn_cpp_clicked{
-    NBCPPViewController*v=[[NBCPPViewController alloc]init];
+//    NBCPPViewController*v=[[NBCPPViewController alloc]init];
+//    UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:v];
+//    u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [self presentViewController:u_cv animated:YES completion:nil];
+   
+    ContainerViewController*v=[[ContainerViewController alloc]init];
     UINavigationController* u_cv = [[UINavigationController alloc]initWithRootViewController:v];
     u_cv.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:u_cv animated:YES completion:nil];
+   
+    
 
 }
 
@@ -647,8 +657,17 @@
 }
 
 -(void)btn_net_clicked{
-    NetViewController *n = [[NetViewController alloc]init];
-    [self.navigationController pushViewController:n animated:YES];
+//    NetViewController *n = [[NetViewController alloc]init];
+//    [self.navigationController pushViewController:n animated:YES];
+    NSLog(@"btn_net_clicked ......");
+    
+ 
+    
+    NBNSUrlSessionControllerViewController*ui_vc = [[NBNSUrlSessionControllerViewController alloc]init];
+    UINavigationController *n = [[UINavigationController alloc]initWithRootViewController:ui_vc];
+    n.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self presentViewController:n animated:YES completion:nil];
 }
 
 /**
